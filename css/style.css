@@ -1,0 +1,143 @@
+
+/*------------------------------------------------------
+ESTILOS GENERALES
+------------------------------------------------------*/
+body {
+
+	overflow-x: hidden !important;  
+    overflow-y: scroll;                 
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-size: .95em;
+    font-weight: 400;
+    line-height: 23px;
+    color: #4f6466;
+    background-color: #fff;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    line-height: 2em;
+}
+
+
+h1 span {
+	display: none;
+}
+
+h2, h3{
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+h2 {
+    color: #4f6466;
+    font-size: 1.3em;
+    margin-bottom: 80px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2em;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #4f6466;
+    text-decoration: none;
+}
+
+
+
+/*.devider {
+    width: 20px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #bd9f86;
+}*/
+
+
+
+.padding-section {
+    padding: 120px;
+    
+}
+
+
+
+/*------------------------------------------------------
+BARRA DE NAVEGADOR
+------------------------------------------------------*/
+
+nav {
+	/*width: auto;
+	height: 60px;*/	
+	background-color: #4f6466;
+}
+
+nav img {
+	height: 50px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+nav li {
+	display: inline-block;	
+	letter-spacing: 2px;	
+	text-transform: uppercase;
+}
+
+nav a {
+	color:#ccc;
+    line-height: 60px;
+    padding: 0 10px;
+    display: block;
+    font-size: .9em;
+}
+
+
+
+/*------------------------------------------------------
+TRATAMIENTOS
+------------------------------------------------------*/
+#tratamientos div{
+	padding: 20px;
+}
+
+#tratamientos div img{
+	width: 80px;
+	margin: 0 auto;
+    display: block;
+}
+
+#tratamientos h3{
+line-height: 30px;
+}
+
+
+/*------------------------------------------------------
+ASEGURADORAS
+------------------------------------------------------*/
+
+#aseguradoras  img{
+	width: 40px;
+	display: block;
+	float:left;
+	
+}
+
+
+
+
+/*------------------------------------------------------
+CONTACTO
+------------------------------------------------------*/
