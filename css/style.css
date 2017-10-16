@@ -33,9 +33,8 @@ h2, h3{
 
 
 h2 {
-    color: #4f6466;
-    font-size: 1.3em;
-    margin-bottom: 80px;
+    font-size: 1.5em;
+    margin-bottom: 40px;
     font-weight: 400;
 }
 
@@ -67,10 +66,26 @@ a {
 
 
 .padding-section {
-    padding: 120px;
+    padding: 60px;
     
 }
 
+.padding-recuadro{
+	padding: 30px;
+}
+
+ .marco{
+    padding: 35px;
+    border: 1px  white;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    text-align: center;
+
+}
+
+.blanco {
+	color:white;
+}
 
 
 /*------------------------------------------------------
@@ -83,20 +98,26 @@ nav {
 	background-color: #4f6466;
 }
 
+
 nav img {
 	height: 90px;
-    margin-left: 5px;
+    margin-left: 20px;
     margin-top: 15px;
 
 }
 
 
+nav ul {
+	float: right;
+	margin: 20px;
+	
+
+}
+
 nav li {
 	display: inline-block;	
 	letter-spacing: 2px;	
 	text-transform: uppercase;
-	margin-top: 20px;
-	margin-top: 20px;
 }
 
 nav a {
@@ -108,6 +129,15 @@ nav a {
 }
 
 
+.flaticon-arrows::before {
+    color: white;
+    font-size: 3em !important;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top:250px;
+    display: block;
+}
+
 /*------------------------------------------------------
 HERO
 ------------------------------------------------------*/
@@ -116,33 +146,53 @@ HERO
 
 	text-align: center;
     background: url("../img/background/bg_silla2.jpg") no-repeat fixed center / cover;
+    
+
 }
 
-#hero .marco {
-    padding: 20px;
-    border: 1px solid white;
-    background-color: rgba(255,255,255,0.1);
-}
+
+
+
 
 
 /*------------------------------------------------------
 TRATAMIENTOS
 ------------------------------------------------------*/
-#tratamientos div{
-	padding: 20px;
-}
 
-#tratamientos div img{
-	width: 80px;
-	margin: 0 auto;
+
+#tratamientos .flaticon-tooth-4::before {
+    color: #3bbeb3; 
+    font-size: 3em !important;
+    text-align: center;
+    padding-bottom:15px;
     display: block;
 }
 
-#tratamientos h3{
-line-height: 30px;
+
+#tratamientos .flaticon-implants::before {
+    color: #8fc964; 
+    font-size: 3em !important;
+    text-align: center;
+    padding-bottom:15px;
+    display: block;
+
 }
 
+#tratamientos .flaticon-tooth-3::before {
+    color: #8fc964;
+    font-size: 3em !important;
+    text-align: center;
+    padding-bottom:15px;
+    display: block;
+}
 
+#tratamientos .flaticon-braces::before {
+    color: #3bbeb3;
+    font-size: 3em !important;
+    text-align: center;
+    padding-bottom:15px;
+    display: block;
+}
 /*------------------------------------------------------
 ASEGURADORAS
 ------------------------------------------------------*/
@@ -152,8 +202,14 @@ ASEGURADORAS
 	display: block;
 	float:left;
 
-	
 }
+
+#aseguradoras{
+
+	text-align: center;
+    background: url("../img/background/bg_titulos2.jpg") no-repeat fixed center / cover;
+}
+
 
 
 
@@ -162,12 +218,46 @@ ASEGURADORAS
 CONTACTO
 ------------------------------------------------------*/
 
+#contacto .flaticon-send::before {
+    color: black;
+    font-size: 1.5em !important;
+ 	display: block;
+ 	float:left;
+ 	padding-right: 10px;
+}
+
+#contacto .flaticon-telephone::before {
+    color: black;
+    font-size: 1.5em !important;	
+    display: block;
+    float:left;
+    padding-right: 10px;
+}
+
+#contacto .flaticon-clock::before {
+    color: black;
+    font-size: 1.5em !important;
+   display: block;
+   float:left;
+   padding-right: 10px;
+
+}
+
+
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
 
 footer img{
 
-
+	width: 50px;
+	
 
 }
+
+
+@media screen and (max-width: 870px) {
+
+    nav > ul {
+        display: none;
+    }
