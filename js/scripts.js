@@ -1,5 +1,13 @@
 
-$('p, h1, h2').css('color', 'red');
 
+$(document).ready(function(){
 
-$('h3').css('color', 'green') .css('line-height', '2px');
+$('.boton').on('click',cambiaClases);
+	});
+
+function cambiaClases(){
+
+$('.boton').addClass('inactivo');
+
+$(this).removeClass('inactivo').addClass('activo');
+		}

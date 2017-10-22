@@ -4,11 +4,11 @@ ESTILOS GENERALES
 ------------------------------------------------------*/
 body {
 
-	overflow-x: hidden !important;  
+    overflow-x: hidden !important;  
     overflow-y: scroll;                 
-	font-family: 'Open Sans', sans-serif;
-	color: black;
-	font-size: .95em;
+  	font-family: 'Open Sans', sans-serif;
+  	color: black;
+  	font-size: .95em;
     font-weight: 400;
     line-height: 23px;
     color: #4f6466;
@@ -18,6 +18,7 @@ body {
 p {
     font-family: "Open Sans", sans-serif;
     line-height: 2em;
+    text-align: justify;
 }
 
 
@@ -46,13 +47,13 @@ h3 {
 
 
 
-li {
+nav .li {
     list-style: none;
 }
 
 a {
     color: #4f6466;
-    text-decoration: none;
+    
 }
 
 
@@ -78,7 +79,7 @@ a {
     padding: 35px;
     border: 1px  white;
     background-color: rgba(255,255,255,0.2);
-    color: white;
+    color: black;
     text-align: center;
 
 }
@@ -121,7 +122,7 @@ nav li {
 }
 
 nav a {
-	color:#ccc;
+	 color:#ccc;
     line-height: 60px;
     padding: 0 10px;
     display: block;
@@ -133,24 +134,79 @@ nav a {
     color: white;
     font-size: 3em !important;
     text-align: center;
-    padding-bottom: 50px;
-    padding-top:250px;
+    padding-bottom:20px;
+    padding-top:100px;
     display: block;
 }
 
+.element {
+    animation: aparece 3s 1s infinite linear alternate;
+}
+
+@keyframes aparece {
+
+  from{
+        opacity: 0.2;
+      }
+
+  to {
+        opacity: 1;
+      }
+  }
+
 /*------------------------------------------------------
-HERO
+CLAIM
 ------------------------------------------------------*/
 
-#hero{
+svg {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+ 
+svg path {
+  fill: #4f6466;
+  stroke: #4f6466;
+  stroke-width: .5;
+  animation: trazar 2s ease-out infinite forwards;  
+}
+      
+#sonrisa {
+  stroke-dasharray: 77.18;  
+  stroke-dashoffset: 77.18;
+  transition: stroke-dashoffset 6s ease-in;
+}
+ 
+#estrella {
+  stroke-dasharray: 7.21;
+  stroke-dashoffset: 7.21;
+  transition: stroke-dashoffset 3s ease-in;
+}
+ 
+ 
+@keyframes trazar {
 
-	text-align: center;
-    background: url("../img/background/bg_silla2.jpg") no-repeat fixed center / cover;
-    
-
+  70% {
+      stroke-width: 2;
+      opacity: 1;
+  }
+  100% {
+    opacity: .1;
+    stroke-dashoffset: 0;
+  }
 }
 
 
+/*------------------------------------------------------
+NOSOTROS
+------------------------------------------------------*/
+
+#nosotros{
+
+  text-align: center;
+    background: url("../img/background/bg_silla2.jpg") no-repeat fixed center / cover;
+    
+}
 
 
 
@@ -160,39 +216,61 @@ TRATAMIENTOS
 ------------------------------------------------------*/
 
 
-#tratamientos .flaticon-tooth-4::before {
+#tratamientos [class^="flaticon-"]::before {
     color: #3bbeb3; 
     font-size: 3em !important;
     text-align: center;
     padding-bottom:15px;
     display: block;
+    line-height: 1em;
 }
 
 
-#tratamientos .flaticon-implants::before {
-    color: #8fc964; 
-    font-size: 3em !important;
-    text-align: center;
-    padding-bottom:15px;
-    display: block;
 
-}
+      .boton {
+        display: block;
+        padding: 15px 0;
+        width: 300px;
+        font-size: 1.1em;
+        text-decoration: none;
+        text-align: center;
+        margin: 100px auto;
+        background: #4f6466;
+        color: white;
+        transition: all .5s;
+        border: 1px solid; 
+      }
 
-#tratamientos .flaticon-tooth-3::before {
-    color: #8fc964;
-    font-size: 3em !important;
-    text-align: center;
-    padding-bottom:15px;
-    display: block;
-}
+      .boton.radio {
+        border-radius: 20px;
+      }
 
-#tratamientos .flaticon-braces::before {
-    color: #3bbeb3;
-    font-size: 3em !important;
-    text-align: center;
-    padding-bottom:15px;
-    display: block;
-}
+      .boton.activo {
+        background: white;
+        color: black;
+      }
+
+      .boton.grande {
+        width: 400px;
+      }
+
+      .boton.inactivo {
+        opacity: .1;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------------------------
 ASEGURADORAS
 ------------------------------------------------------*/
@@ -217,47 +295,58 @@ ASEGURADORAS
 /*------------------------------------------------------
 CONTACTO
 ------------------------------------------------------*/
-
-#contacto .flaticon-send::before {
+#contacto [class^="flaticon-"]::before {
     color: black;
-    font-size: 1.5em !important;
- 	display: block;
- 	float:left;
- 	padding-right: 10px;
-}
-
-#contacto .flaticon-telephone::before {
-    color: black;
-    font-size: 1.5em !important;	
+    font-size: 2em !important;
     display: block;
     float:left;
-    padding-right: 10px;
+    padding: 10px;
 }
 
-#contacto .flaticon-clock::before {
-    color: black;
-    font-size: 1.5em !important;
-   display: block;
-   float:left;
-   padding-right: 10px;
 
+
+
+#contacto article .devider {
+    width: 60%;
+    margin: 20px 20%;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
+
+
+#contacto article ul{
+
+  display: inline-block;
+  list-style: none;
+}
+
+
 
 
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
 
-footer img{
+footer{
 
-	width: 50px;
-	
-
+  background-color: #4f6466;
+  
 }
 
+footer a {
+    color: #fff;
+}
+
+footer img{
+
+	width: 60px;
+  float: none;
+  margin: 20px auto;
+  display: block;
+}
 
 @media screen and (max-width: 870px) {
 
     nav > ul {
         display: none;
+    
     }
