@@ -18,8 +18,7 @@ body {
 p {
     font-family: "Open Sans", sans-serif;
     line-height: 2em;
-    text-align: justify;
-}
+    }
 
 
 h1 span {
@@ -43,6 +42,13 @@ h3 {
     font-size: 1.2em;
     letter-spacing: 7px;
     text-align: center;
+
+}
+
+h4 {
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    text-align: left;
 }
 
 
@@ -58,27 +64,16 @@ a {
 
 
 
-/*.devider {
-    width: 20px;
-    margin-bottom: 40px;
-    border-bottom: 3px solid #bd9f86;
-}*/
-
-
-
 .padding-section {
     padding: 60px;
     
 }
 
-.padding-recuadro{
-	padding: 30px;
-}
 
  .marco{
     padding: 35px;
     border: 1px  white;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.8);
     color: black;
     text-align: center;
 
@@ -158,7 +153,7 @@ nav a {
 CLAIM
 ------------------------------------------------------*/
 
-svg {
+/*svg {
   width: 50%;
   display: block;
   margin: 0 auto;
@@ -195,6 +190,16 @@ svg path {
     stroke-dashoffset: 0;
   }
 }
+*/
+
+#claim [class^="flaticon-"]::before {
+    color: #4f6466; 
+    font-size: 3em !important;
+    text-align: center;
+    padding-bottom:15px;
+    display: block;
+    line-height: 1em;
+}
 
 
 /*------------------------------------------------------
@@ -203,11 +208,20 @@ NOSOTROS
 
 #nosotros{
 
-  text-align: center;
-    background: url("../img/background/bg_silla2.jpg") no-repeat fixed center / cover;
-    
+  
+  background: url("../img/background/bg_titulos3.jpg") no-repeat fixed center / cover;
+   
 }
 
+#nosotros ul{
+
+  display: inline-block;
+  list-style: none;
+  text-align: left;
+  line-height: 30px;
+  color: black;
+
+}
 
 
 
@@ -217,57 +231,41 @@ TRATAMIENTOS
 
 
 #tratamientos [class^="flaticon-"]::before {
-    color: #3bbeb3; 
+     color: #4f6466;
     font-size: 3em !important;
     text-align: center;
     padding-bottom:15px;
     display: block;
     line-height: 1em;
+
 }
 
 
+    /*: color: #3bbeb3;*/
 
-      .boton {
-        display: block;
-        padding: 15px 0;
-        width: 300px;
-        font-size: 1.1em;
-        text-decoration: none;
-        text-align: center;
-        margin: 100px auto;
-        background: #4f6466;
-        color: white;
-        transition: all .5s;
-        border: 1px solid; 
-      }
+.boton {
+    
+    color: black;
+    display: inline-block;
+    padding: 15px;
+    transition: all 1s cubic-bezier(.33,.62,.38,.97);
+    text-align: justify;
 
-      .boton.radio {
-        border-radius: 20px;
-      }
+}
 
-      .boton.activo {
-        background: white;
-        color: black;
-      }
+.boton:hover {
+    background-color: rgb(240, 240, 240);
+    color: white;
+    padding: 50px 100px;
+    background-color: #4f6466;
+    text-align:left;
 
-      .boton.grande {
-        width: 400px;
-      }
+  }
 
-      .boton.inactivo {
-        opacity: .1;
-      }
-
-
-
-
-
-
-
-
-
-
-
+.boton.blanco {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
 
 
 
@@ -275,20 +273,13 @@ TRATAMIENTOS
 ASEGURADORAS
 ------------------------------------------------------*/
 
-#aseguradoras  img{
-	width: 40px;
-	display: block;
-	float:left;
-
-}
 
 #aseguradoras{
 
-	text-align: center;
-    background: url("../img/background/bg_titulos2.jpg") no-repeat fixed center / cover;
+  text-align: center;
+  background: url("../img/background/bg_silla3.jpg") no-repeat fixed center / cover;
+
 }
-
-
 
 
 
@@ -302,8 +293,6 @@ CONTACTO
     float:left;
     padding: 10px;
 }
-
-
 
 
 #contacto article .devider {
@@ -348,5 +337,19 @@ footer img{
 
     nav > ul {
         display: none;
+
+        }
+
+    iframe{
+
+        float: none;
+        margin: 40px 10%;
+        display: block;
+        text-align: center;
+        padding:20px 0;
+        width: 80%;
+
+      
+       }
     
-    }
+    
