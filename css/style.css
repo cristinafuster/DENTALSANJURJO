@@ -90,7 +90,7 @@ BARRA DE NAVEGADOR
 nav {
 	width: auto;
 	height: 110px;	
-	background-color: #002e43;
+	background-color: #27aae2;
 }
 
 
@@ -140,7 +140,7 @@ nav a {
 @keyframes aparece {
 
   from{
-        opacity: 0.2;
+        opacity: 0;
       }
 
   to {
@@ -250,15 +250,18 @@ TRATAMIENTOS
     transition: all 1s cubic-bezier(.33,.62,.38,.97);
     text-align: justify;
 
+
+
 }
 
 
 .boton:hover {
     
-    color: white;
+    
     padding: 50px 100px;
-    background-color: #002e43;
+    background-color: rgba(0, 46, 67, 0.8);
     text-align:left;
+    color: white;
 
   }
 
@@ -279,7 +282,7 @@ ASEGURADORAS
 
   text-align: center;
   background: url("../img/background/bg_silla3.jpg") no-repeat fixed center / cover;
-
+  
 }
 
 
@@ -318,7 +321,7 @@ FOOTER
 
 footer{
 
-  background-color: #002e43 ;
+  background-color: #27aae2 ;
   
 }
 
@@ -355,7 +358,14 @@ footer img{
       
        }
     
-    
+    .boton:hover {
+
+    padding: 15px 40px;
+   
+
+  }
+
+
     /*colores---------*/
 
     /*#92c9fe azul muy claro
