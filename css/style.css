@@ -7,11 +7,10 @@ body {
     overflow-x: hidden !important;  
     overflow-y: scroll;                 
   	font-family: 'Open Sans', sans-serif;
-  	color: black;
   	font-size: .95em;
     font-weight: 400;
     line-height: 23px;
-    color: #4f6466;
+    color: #002e43;
     background-color: #fff;
 }
 
@@ -58,7 +57,7 @@ nav .li {
 }
 
 a {
-    color: #4f6466;
+    color: #002e43;
     
 }
 
@@ -74,7 +73,7 @@ a {
     padding: 35px;
     border: 1px  white;
     background-color: rgba(255,255,255,0.8);
-    color: black;
+    color: #002e43;
     text-align: center;
 
 }
@@ -91,7 +90,7 @@ BARRA DE NAVEGADOR
 nav {
 	width: auto;
 	height: 110px;	
-	background-color: #4f6466;
+	background-color: #002e43;
 }
 
 
@@ -117,7 +116,7 @@ nav li {
 }
 
 nav a {
-	 color:#ccc;
+	 color:white;
     line-height: 60px;
     padding: 0 10px;
     display: block;
@@ -193,7 +192,7 @@ svg path {
 */
 
 #claim [class^="flaticon-"]::before {
-    color: #4f6466; 
+    color: #002e43; 
     font-size: 3em !important;
     text-align: center;
     padding-bottom:15px;
@@ -219,7 +218,7 @@ NOSOTROS
   list-style: none;
   text-align: left;
   line-height: 30px;
-  color: black;
+  color: #002e43;
 
 }
 
@@ -231,7 +230,7 @@ TRATAMIENTOS
 
 
 #tratamientos [class^="flaticon-"]::before {
-     color: #4f6466;
+     color: #007db6;
     font-size: 3em !important;
     text-align: center;
     padding-bottom:15px;
@@ -245,7 +244,7 @@ TRATAMIENTOS
 
 .boton {
     
-    color: black;
+    color: #002e43;
     display: inline-block;
     padding: 15px;
     transition: all 1s cubic-bezier(.33,.62,.38,.97);
@@ -253,19 +252,21 @@ TRATAMIENTOS
 
 }
 
+
 .boton:hover {
-    background-color: rgb(240, 240, 240);
+    
     color: white;
     padding: 50px 100px;
-    background-color: #4f6466;
+    background-color: #002e43;
     text-align:left;
 
   }
 
 .boton.blanco {
     background-color: rgba(255, 255, 255, 0.8);
-    color: black;
+    color: #002e43;
 }
+
 
 
 
@@ -287,7 +288,7 @@ ASEGURADORAS
 CONTACTO
 ------------------------------------------------------*/
 #contacto [class^="flaticon-"]::before {
-    color: black;
+    color: #002e43;
     font-size: 2em !important;
     display: block;
     float:left;
@@ -317,9 +318,11 @@ FOOTER
 
 footer{
 
-  background-color: #4f6466;
+  background-color: #002e43 ;
   
 }
+
+/*#007db6*/
 
 footer a {
     color: #fff;
@@ -352,4 +355,15 @@ footer img{
       
        }
     
+    
+    /*colores---------*/
+
+    /*#92c9fe azul muy claro
+
+    /*#007db6 azul claro*/ 
+
+    /*#002e43 azul oscuro*/ 
+
+    /*#4f6466 gris letras*/ 
+
     
