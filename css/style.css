@@ -14,6 +14,14 @@ body {
     background-color: #fff;
 }
 
+aside{
+
+font-size: .8em;
+
+}
+
+
+
 p {
     font-family: "Open Sans", sans-serif;
     line-height: 2em;
@@ -32,7 +40,7 @@ h2, h3{
 
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 40px;
     font-weight: 400;
 }
@@ -51,18 +59,6 @@ h4 {
 }
 
 
-
-nav .li {
-    list-style: none;
-}
-
-a {
-    color: #002e43;
-    
-}
-
-
-
 .padding-section {
     padding: 60px;
     
@@ -71,7 +67,7 @@ a {
 
  .marco{
     padding: 35px;
-    border: 1px  white;
+    border: 1px  #002e43;
     background-color: rgba(255,255,255,0.8);
     color: #002e43;
     text-align: center;
@@ -90,7 +86,7 @@ BARRA DE NAVEGADOR
 nav {
 	width: auto;
 	height: 110px;	
-	background-color: #27aae2;
+	background-color: white;
 }
 
 
@@ -113,10 +109,11 @@ nav li {
 	display: inline-block;	
 	letter-spacing: 2px;	
 	text-transform: uppercase;
+  list-style: none;
 }
 
 nav a {
-	 color:white;
+	 color:#002e43;
     line-height: 60px;
     padding: 0 10px;
     display: block;
@@ -147,6 +144,15 @@ nav a {
         opacity: 1;
       }
   }
+
+
+
+
+  nav .devider {
+    width: 100%;
+    margin: 20px;
+    border-bottom: 1px solid rgba(0,46,67,.2);
+}
 
 /*------------------------------------------------------
 CLAIM
@@ -270,7 +276,10 @@ TRATAMIENTOS
     color: #002e43;
 }
 
-
+.boton.azul {
+    background-color: rgba(39, 170, 226, 0.2);
+    color: #002e43;
+}
 
 
 /*------------------------------------------------------
@@ -302,7 +311,7 @@ CONTACTO
 #contacto article .devider {
     width: 60%;
     margin: 20px 20%;
-    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,46,67,.2);
 }
 
 
@@ -318,22 +327,20 @@ CONTACTO
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
-
-footer{
-
-  background-color: #27aae2 ;
-  
+  footer .devider {
+    width: 100%;
+    margin: 20px;
+    border-bottom: 1px solid rgba(0,46,67,.2);
 }
 
-/*#007db6*/
 
 footer a {
-    color: #fff;
+    color: #002e43;
 }
 
 footer img{
 
-	width: 60px;
+	width: 90px;
   float: none;
   margin: 20px auto;
   display: block;
