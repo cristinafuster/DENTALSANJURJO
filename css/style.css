@@ -79,18 +79,49 @@ h4 {
 }
 
 
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.spinner {
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    position: absolute;
+  height: 100px;
+  width: 100px;
+  animation: rotate 2s infinite linear;
+  border: 2px solid #007db6;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+
+
+
+
 /*------------------------------------------------------
-BARRA DE NAVEGADOR
+MENU
 ------------------------------------------------------*/
 
-nav {
+
+  nav {
 	width: auto;
 	height: 110px;	
 	background-color: white;
 }
 
 
-nav img {
+ nav img {
 	height: 90px;
     margin-left: 20px;
     margin-top: 15px;
@@ -98,21 +129,21 @@ nav img {
 }
 
 
-nav ul {
+  nav ul {
 	float: right;
 	margin: 20px;
 	
 
 }
 
-nav li {
+ nav li {
 	display: inline-block;	
 	letter-spacing: 2px;	
 	text-transform: uppercase;
   list-style: none;
 }
 
-nav a {
+ nav a {
 	 color:#002e43;
     line-height: 60px;
     padding: 0 10px;
@@ -131,7 +162,7 @@ nav a {
 }
 
 .element {
-    animation: aparece 3s 1s infinite linear alternate;
+    animation: aparece 2s 2s infinite linear alternate;
 }
 
 @keyframes aparece {
@@ -147,57 +178,25 @@ nav a {
 
 
 
-
   nav .devider {
     width: 100%;
-    margin: 20px;
-    border-bottom: 1px solid rgba(0,46,67,.2);
+    margin: 22px auto;
+    border-bottom: 3px solid rgba(0,46,67,.4);
+   
+}
+
+
+
+.abierto{
+    transform: translateY(0);
 }
 
 /*------------------------------------------------------
-CLAIM
+INICIO
 ------------------------------------------------------*/
 
-/*svg {
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
- 
-svg path {
-  fill: #4f6466;
-  stroke: #4f6466;
-  stroke-width: .5;
-  animation: trazar 2s ease-out infinite forwards;  
-}
-      
-#sonrisa {
-  stroke-dasharray: 77.18;  
-  stroke-dashoffset: 77.18;
-  transition: stroke-dashoffset 6s ease-in;
-}
- 
-#estrella {
-  stroke-dasharray: 7.21;
-  stroke-dashoffset: 7.21;
-  transition: stroke-dashoffset 3s ease-in;
-}
- 
- 
-@keyframes trazar {
 
-  70% {
-      stroke-width: 2;
-      opacity: 1;
-  }
-  100% {
-    opacity: .1;
-    stroke-dashoffset: 0;
-  }
-}
-*/
-
-#claim [class^="flaticon-"]::before {
+#inicio [class^="flaticon-"]::before {
     color: #002e43; 
     font-size: 3em !important;
     text-align: center;
@@ -206,16 +205,24 @@ svg path {
     line-height: 1em;
 }
 
+#inicio{
+
+  text-align: center;
+  background: url("../img/background/bg_pocket.jpg") no-repeat fixed center / cover;
+  margin-top: 20px ;
+
+}   
+  
 
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
 
-#nosotros{
+#nosotros .devider {
+    width: 100%;
+    margin: 20px;
+    border-bottom: 3px solid rgba(0,46,67,.3);
 
-  
-  background: url("../img/background/bg_titulos3.jpg") no-repeat fixed center / cover;
-   
 }
 
 #nosotros ul{
@@ -229,10 +236,16 @@ NOSOTROS
 }
 
 
-
 /*------------------------------------------------------
 TRATAMIENTOS
 ------------------------------------------------------*/
+
+#tratamientos .devider {
+    width: 100%;
+    margin: 20px;
+    border-bottom: 3px solid rgba(0,46,67,.3);
+
+}
 
 
 #tratamientos [class^="flaticon-"]::before {
@@ -246,7 +259,6 @@ TRATAMIENTOS
 }
 
 
-    /*: color: #3bbeb3;*/
 
 .boton {
     
@@ -280,6 +292,7 @@ TRATAMIENTOS
     background-color: rgba(39, 170, 226, 0.2);
     color: #002e43;
 }
+
 
 
 /*------------------------------------------------------
@@ -382,5 +395,8 @@ footer img{
     /*#002e43 azul oscuro*/ 
 
     /*#4f6466 gris letras*/ 
+
+
+    /*: color: #3bbeb3;*/
 
     

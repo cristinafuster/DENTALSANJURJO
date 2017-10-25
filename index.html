@@ -13,9 +13,7 @@
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">         <!--  ICONOS  -->  
     <link type="text/css" rel="stylesheet" href="css/style.css">                    <!--  ESTILOS  --> 
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="./js/scripts.js"></script>
+
 
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
@@ -58,16 +56,23 @@
 
 	<body>
 
+    <div class="overlay">
+      <div class="spinner"></div>
+    </div>
+
+
+
+
 		<!--NAVEGADOR -->
 		
-		<nav>
+		<nav id="menu">
 
 			<ul>
-				<li><a href="#claim">Inicio</a></li>
-				<li><a href="#nosotros">Nosotros</a></li>
-				<li><a href="#tratamientos">Tratamientos</a></li>
-				<li><a href="#aseguradoras">Aseguradoras</a></li>
-				<li><a href="#contacto">Contacto</a></li>
+				<li><a href="#" href="#" class="desplazar" data-seccion="#inicio">Inicio</a></li>
+				<li><a href="#"  href="#" href="#" class="desplazar" data-seccion="#nosotros">Nosotros</a></li>
+				<li><a href="#" href="#" class="desplazar" data-seccion="#tratamientos">Tratamientos</a></li>
+				<li><a href="#" href="#" class="desplazar" data-seccion="#aseguradoras">Aseguradoras</a></li>
+				<li><a href="#" href="#" class="desplazar" data-seccion="#contacto">Contacto</a></li>
 
 			</ul>
 
@@ -87,21 +92,7 @@
 	<main>
 	
 <!--CLAIM-->
-<section id="claim"  class="padding-section">
-
-<!---
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1"  aria-labelledby="Clinica Dr. Sanjurjo">
-   	<title id="titulo">sonrisa</title>
-   	<desc id="descripcion">Representación de una sonrisa en SVG</desc>
-	<svg viewBox="0 0 511 999" xmlns="http://www.w3.org/2000/svg">
- <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
- <!--- 	<title>sonrisa</title> -->
-  <!---  <path id="sonrisa" d="m504.23999,187.240997c-20.963013,0.720001 -74.820007,-0.190002 -122.028992,-24.037003c-36.858002,-18.621002 -71.031006,-68.403992 -126.209015,-10.990997c-55.17099,-57.403999 -89.312988,-7.651993 -126.21199,10.990997c-47.206993,23.848007 -101.068993,24.753998 -122.029993,24.037003c-6.717,-0.270996 -10.433,8.033997 -5.49,12.859009c3.909,10.265991 26.730999,64.785004 96.382,141.259003c27.349998,30.028992 57.905998,45.255005 90.82,45.255005c31.830002,0 56.525009,-14.445007 66.529007,-21.365021c10.005981,6.921021 34.703003,21.365021 66.527008,21.365021c32.914001,0 63.470978,-15.226013 90.819977,-45.255005c69.653015,-76.473999 92.473999,-130.993011 96.382019,-141.259003c4.908966,-4.794006 1.293976,-13.096008 -5.490021,-12.859009zm-101.981995,144.018005c-24.389008,26.777008 -51.21402,40.355988 -79.730011,40.355988c-35.367004,0 -61.475983,-21.259003 -61.722992,-21.462982c-2.785004,-2.324005 -6.831009,-2.320007 -9.609009,0c-0.257996,0.214996 -26.133987,21.462982 -61.724991,21.462982c-28.516998,0 -55.34201,-13.578003 -79.730003,-40.355988c-33.029999,-36.265991 -55.296001,-67.632996 -69.821999,-91.236008c112.679001,93.632004 319.07103,94.039017 432.24202,-0.065994c-14.503021,23.570007 -36.77301,54.928986 -69.903015,91.302002zm-368.604996,-117.296997c96.819,35.365997 233.901993,40.365005 337.961014,25.511002c4.100983,-0.584991 6.949982,-4.384003 6.36499,-8.483994c-0.584991,-4.100998 -4.386993,-6.951019 -8.484009,-6.365005c-104.996002,14.987 -236.022003,8.667007 -326.748985,-23.311996c26.741997,-2.201996 61.622002,-8.462006 93.805,-24.720001c43.362991,-21.910004 64.569,-64.747009 113.798996,-8.337997c2.983002,3.418991 8.309998,3.425995 11.302002,0c49.252014,-56.439003 70.528015,-13.518997 113.795013,8.337997c32.181976,16.255997 67.048981,22.516006 93.789001,24.718994c-22.059021,7.775009 -47.587006,14.353012 -75.460999,19.393005c-4.076019,0.735992 -6.78302,4.638 -6.046021,8.713989c0.737,4.076004 4.634003,6.776016 8.71402,6.046997c30.386993,-5.494003 58.156982,-12.805984 81.948975,-21.513992c-107.299988,108.108994 -336.511993,109.077988 -444.738998,0.011002z"/>
-    <path id="estrella" d="m199.736603,261.116577l-17.573563,0l-5.424835,-16.415298l-0.761932,2.295288l-4.667831,14.125229l-17.568497,-0.005219l14.213943,10.154602l-5.434692,16.424591l14.214096,-10.154205l14.218948,10.159302l-5.43486,-16.429688l14.219223,-10.154602zm-21.117722,13.880219l-1.880676,-1.344147l-1.879807,1.344147l-6.245148,4.46048l2.382401,-7.211975l0.722717,-2.174377l-1.884552,-1.344055l-6.240601,-4.460632l10.044083,0l0.717682,-2.174927l2.383224,-7.21109l2.382385,7.206451l0.717667,2.174866c3.34967,0 6.699341,0 10.049011,0l-6.24942,4.460236l-1.885223,1.344086l0.718475,2.179443l2.391953,7.211975l-6.244171,-4.46048z" /> </svg> -->
-
-
-
+<section id="inicio"  class="padding-section">
 
 			<div class="container">
 
@@ -109,26 +100,23 @@
 
 					<div class="col-md">
 						
-						<span class=" boton azul">Su clínica dental en Ribeira</span>
+						<h2 class=" boton">Su clínica dental en Ribeira</h1>
 
-					</div>
+						<h1 class="boton">Más de 20 años cuidando la salud de su boca</h1>
 
-					<div class="col-md">
 
-						<span class="boton azul">Más de 20 años cuidando la salud de su boca</span>
-
-						</aside>
-
-					</div>
-
-					<div class="col-md">
-
-						<span class="boton azul"> Le ayudamos a mantener una boca <i>sana, funcional y estética.</i></span>
+						<h2 class="boton"> Le ayudamos a mantener una boca <i>sana, funcional y estética.</i></h2>
 
 					</div>
 
 				</div>
 
+			<div class="container">
+
+				<div class="row"></div>
+				<div class="col-auto"></div>
+
+			</div>
 
 		<i class="flaticon-arrows element"></i>
 
@@ -137,11 +125,16 @@
 
 <!--NOSOTROS-->
 
-		<section id="nosotros" class="padding-section">
+
+
+		<section id="nosotros" class="padding-section" >
+
+
 
 		<header>
 
-			<h2 class="text-center blanco"> Nosotros </h2>
+			<h2 class="text-center"> Nosotros </h2>
+			<div class="devider"></div>
 
 		</header>
 
@@ -178,10 +171,14 @@
 				<i class="flaticon-arrows element"></i>
 
 		</section>
+		
+		<div class="devider"></div>
 
 <!--TRATAMIENTOS-->
 
 	<section  id="tratamientos" class="padding-section">
+
+		<div class="devider"></div>
 
 		<header>
 
@@ -424,9 +421,11 @@
 	</footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
 
-
-
-
+  </body>
+  
+</html>
 
 
