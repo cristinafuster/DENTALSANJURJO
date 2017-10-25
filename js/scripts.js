@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 function inicializar(){
 
-	$('.overlay').fadeOut(2500);
+	$('.overlay').fadeOut(1500);
 }
 
 function navegar(){
