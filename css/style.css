@@ -11,7 +11,7 @@ body {
     font-weight: 400;
     line-height: 23px;
     color: #002e43;
-    background-color: #fff;
+    background-color: #eee;
 }
 
 aside{
@@ -117,7 +117,7 @@ MENU
   nav {
 	width: auto;
 	height: 110px;	
-	background-color: white;
+	background-color: #eee;
 }
 
 
@@ -153,8 +153,8 @@ MENU
 
 
 .flaticon-arrows::before {
-    color: white;
-    font-size: 3em !important;
+    color: #002e43;
+    font-size: 4em !important;
     text-align: center;
     padding-bottom:20px;
     padding-top:100px;
@@ -162,20 +162,15 @@ MENU
 }
 
 .element {
-    animation: aparece 2s 2s infinite linear alternate;
+    animation: aparece 1s 1s infinite linear alternate;
 }
 
 @keyframes aparece {
 
-  from{
-        opacity: 0;
-      }
+  from{opacity: 0;}
 
-  to {
-        opacity: 1;
-      }
+  to {opacity: 1; }
   }
-
 
 
   nav .devider {
@@ -186,41 +181,44 @@ MENU
 }
 
 
-
-.abierto{
-    transform: translateY(0);
-}
-
 /*------------------------------------------------------
 INICIO
 ------------------------------------------------------*/
 
-
-#inicio [class^="flaticon-"]::before {
-    color: #002e43; 
-    font-size: 3em !important;
-    text-align: center;
-    padding-bottom:15px;
-    display: block;
-    line-height: 1em;
-}
-
 #inicio{
 
   text-align: center;
-  background: url("../img/background/bg_pocket.jpg") no-repeat fixed center / cover;
+  background: url("../img/background/bg_pocket.jpg") no-repeat fixed center top / cover;
   margin-top: 20px ;
 
 }   
+
+
+.typewriter {
+ 
+  overflow: hidden; 
+  white-space: nowrap;
+  margin: 30px auto;
+  text-align:left;
+  animation: 
+  typing  5s steps(70, end)
   
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
 
 #nosotros .devider {
-    width: 100%;
-    margin: 20px;
+    width: 50%;
+    margin: 0 25%;
     border-bottom: 3px solid rgba(0,46,67,.3);
 
 }
@@ -240,11 +238,9 @@ NOSOTROS
 TRATAMIENTOS
 ------------------------------------------------------*/
 
-#tratamientos .devider {
-    width: 100%;
-    margin: 20px;
-    border-bottom: 3px solid rgba(0,46,67,.3);
+#tratamientos{
 
+  background-color: #fff;
 }
 
 
