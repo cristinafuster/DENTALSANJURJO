@@ -58,6 +58,16 @@ h4 {
     text-align: left;
 }
 
+h5{
+
+font-size: 20px;
+line-height: 20px;
+text-transform: uppercase;
+letter-spacing: 3px;
+
+}
+
+
 
 .padding-section {
     padding: 60px;
@@ -192,26 +202,30 @@ INICIO
 
 }   
 
-
-.typewriter {
-
+#inicio h5 { 
   white-space: nowrap;
-  margin: 30px auto;
-  animation: 
-  typing  5s steps(70, end)
+  overflow: hidden;
+  
+  border-right: .15em solid orange;
+  animation: typing 6s steps(100, end),
+  blink-caret .75s step-end infinite;
   
 }
 
 
 @keyframes typing {
-  from { width: 0% }
+  from { width: 0 }
   to { width: 100% }
 }
 
-.margenespecial{
-
-  margin-left: 40px;
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
+
+
+
+
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/

@@ -2,17 +2,11 @@ $(window).on('load', inicializar);
 
 $(document).ready(function(){
 
-	$('.fa-bars').on('click', visibilidadMenu);
-
 	$('.desplazar').on('click', navegar);
+
 
 });
 
-
-function visibilidadMenu(){
-
-	$('#menu').toggleClass('abierto');
-}
 
 function inicializar(){
 
@@ -29,5 +23,8 @@ function navegar(){
 		scrollTop:profundidad
 	}, 900);
 
-	$('.menu').removeClass('abierto');
 }
+
+
+
+
