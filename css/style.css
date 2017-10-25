@@ -187,7 +187,6 @@ INICIO
 
 #inicio{
 
-  text-align: center;
   background: url("../img/background/bg_pocket.jpg") no-repeat fixed center top / cover;
   margin-top: 20px ;
 
@@ -195,11 +194,9 @@ INICIO
 
 
 .typewriter {
- 
-  overflow: hidden; 
+
   white-space: nowrap;
   margin: 30px auto;
-  text-align:left;
   animation: 
   typing  5s steps(70, end)
   
@@ -207,11 +204,14 @@ INICIO
 
 
 @keyframes typing {
-  from { width: 0 }
+  from { width: 0% }
   to { width: 100% }
 }
 
+.margenespecial{
 
+  margin-left: 40px;
+}
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
