@@ -60,7 +60,7 @@ h4 {
 
 h5{
 
-font-size: 20px;
+font-size: 18px;
 line-height: 20px;
 text-transform: uppercase;
 letter-spacing: 3px;
@@ -205,7 +205,7 @@ INICIO
 #inicio h5 { 
   white-space: nowrap;
   overflow: hidden;
-  
+  letter-spacing: .15em;
   border-right: .15em solid orange;
   animation: typing 6s steps(100, end),
   blink-caret .75s step-end infinite;
