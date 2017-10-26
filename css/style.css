@@ -199,6 +199,7 @@ INICIO
 
   background: url("../img/background/bg_pocket.jpg") no-repeat fixed center top / cover;
   margin-top: 20px ;
+  height: 100vh;
 
 }   
 
@@ -269,41 +270,50 @@ TRATAMIENTOS
 }
 
 
-
 .boton {
     
-    color: #002e43;
     display: inline-block;
-    padding: 15px;
+    padding: 15px 30px;
     transition: all 1s cubic-bezier(.33,.62,.38,.97);
     text-align: justify;
 
-
-
-}
-
-
-.boton:hover {
+  }
     
+
+  .boton:hover {
     
-    padding: 50px 100px;
+    padding: 20px;
     background-color: rgba(0, 46, 67, 0.8);
     text-align:left;
     color: white;
 
   }
 
-.boton.blanco {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #002e43;
-}
-
 .boton.azul {
-    background-color: rgba(39, 170, 226, 0.2);
-    color: #002e43;
+    color: rgba(39, 170, 226, 0.2);
+    background-color: #002e43;
+    
+
 }
 
+.boton.naranja {
 
+    border: 1px solid #bd9f86;
+    color: #000;
+    border: 1px solid rgba(0,46,67,.2);
+}
+
+#tratamientos .boton {
+    opacity: 0;
+    padding: 7px 50px;
+    transition: all .3s;
+}
+
+#tratamientos .boton.visible {
+    opacity: 1;
+    padding: 7px 40px;
+
+}
 
 /*------------------------------------------------------
 ASEGURADORAS
@@ -385,15 +395,30 @@ footer img{
         padding:20px 0;
         width: 80%;
 
-      
        }
     
     .boton:hover {
 
-    padding: 15px 40px;
-   
-
+    padding: 15px;
+  
   }
+
+
+    #inicio article {
+        margin-left: 0px;
+
+    }
+
+#inicio @keyframes typing {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+}
+
+
+
+
 
 
     /*colores---------*/
