@@ -20,8 +20,6 @@ font-size: .8em;
 
 }
 
-
-
 p {
     font-family: "Open Sans", sans-serif;
     line-height: 2em;
@@ -67,7 +65,9 @@ letter-spacing: 3px;
 
 }
 
-
+.blanco{
+  color: white;
+}
 
 .padding-section {
     padding: 60px;
@@ -75,19 +75,14 @@ letter-spacing: 3px;
 }
 
 
- .marco{
+ /*.marco{
     padding: 35px;
     border: 1px  #002e43;
     background-color: rgba(255,255,255,0.8);
     color: #002e43;
-    text-align: center;
+    text-align: center;*/
 
 }
-
-.blanco {
-	color:white;
-}
-
 
 .overlay {
     width: 100%;
@@ -130,6 +125,14 @@ MENU
 	background-color: #eee;
 }
 
+  .barras {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  font-size: 4em;
+  }
 
  nav img {
 	height: 90px;
@@ -197,11 +200,23 @@ INICIO
 
 #inicio{
 
-  background: url("../img/background/bg_pocket.jpg") no-repeat fixed center top / cover;
-  margin-top: 20px ;
+  background: url("../img/background/bg_toothpaste.jpg") no-repeat fixed center top / cover;
+  margin-top: 20px;
   height: 100vh;
+  position: relative;
 
 }   
+
+#inicio::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(238,238,238,.4);
+
+}
 
 #inicio h5 { 
   white-space: nowrap;
@@ -223,8 +238,6 @@ INICIO
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
-
-
 
 
 /*------------------------------------------------------
@@ -379,12 +392,37 @@ footer img{
   display: block;
 }
 
-@media screen and (max-width: 870px) {
 
-    nav > ul {
-        display: none;
+@media screen and (max-width: 800px) {
 
+        .barras {
+          display: block;
         }
+
+        nav {
+          width: 300px;
+          height: 100vh;
+          border-right: 1px solid #999;
+          transform: translateX(-100%)
+        }
+
+        nav.abierto {
+          transform: translateX(0)
+        }
+
+        nav ul {
+          float: none;
+          margin: 0;
+          padding: 0
+        }
+
+        nav li {
+          display: block;
+          list-style: none;
+          text-align: center;
+          width: 300px;
+        }
+
 
     iframe{
 
@@ -409,12 +447,12 @@ footer img{
 
     }
 
-#inicio @keyframes typing {
-  from { width: 0 }
-  to { width: 20% }
-}
+    #inicio @keyframes typing {
+      from { width: 0 }
+      to { width: 20% }
+    }
 
-}
+  }
 
 
 

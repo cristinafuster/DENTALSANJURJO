@@ -1,10 +1,11 @@
 $(window).on('load', inicializar);
 $(window).on('scroll', efectosScroll);
 
+
 $(document).ready(function(){
 
 	$('.desplazar').on('click', navegar);
-
+	$('.barras').on('click', muestraMenu);
 
 });
 
@@ -44,9 +45,16 @@ function efectosScroll(){
 
 		/*alert("llegamos");*/
 
-		$('#tratamientos .boton').addClass('visible');
+	$('#tratamientos .boton').addClass('visible');
 
 	}
 }
+
+
+function muestraMenu(){
+	
+	$('nav').toggleClass('abierto');
+
+	}
 
 
