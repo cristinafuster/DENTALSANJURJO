@@ -258,6 +258,11 @@ NOSOTROS
 
 }
 
+#nosotros .inferior h5{
+
+  margin: 35px;
+}
+
 .asimetrico {
   color: #fff;
   padding: 60px 0;
@@ -326,7 +331,7 @@ TRATAMIENTOS
     text-align: justify;
     margin-bottom: 30px;
     color: #002e43;
-    background-color:   rgba(59, 89, 152, 0.2);
+    background-color: rgba(59, 89, 152, 0.2);
   }
     
 
@@ -346,9 +351,9 @@ TRATAMIENTOS
 
 .boton.naranja {
 
-    border: 1px solid #bd9f86;
     color: #000;
     border: 1px solid rgba(0,46,67,.2);
+    background: orange;
 }
 
 #tratamientos .boton {
