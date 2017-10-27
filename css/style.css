@@ -59,7 +59,7 @@ h4 {
 
 h5{
 
-font-size: 20px;
+font-size: 1.3em;
 line-height: 20px;
 text-transform: uppercase;
 letter-spacing: 3px;
@@ -117,60 +117,73 @@ letter-spacing: 3px;
 /*------------------------------------------------------
 MENU
 ------------------------------------------------------*/
-
+  .barras {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    font-size: 2em;
+  }
 
   nav {
-	width: auto;
-	height: 110px;	
-	background-color: #eee;
-}
-
-  .barras {
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  top: 0px;
-  right: 20px;
-  font-size: 4em;
+  	width: 100%;
+  	height: 110px;	
+  	background-color: #eee;
+    border-bottom: 1px solid rgba(0,46,67,.4);
+    letter-spacing: 2px;
+    top: 0;
+    left:0;
+    transition: all .5s;
   }
 
  nav img {
-	height: 90px;
+	  height: 90px;
     margin-left: 20px;
     margin-top: 15px;
 
 }
 
-
   nav ul {
 	float: right;
-	margin: 20px;
+	margin-right: 20px;
 }
 
 
  nav li {
 	display: inline-block;	
-	letter-spacing: 2px;	
-	text-transform: uppercase;
   list-style: none;
 }
+
 
  nav a {
 	 color:#002e43;
     line-height: 60px;
-    padding: 0 10px;
+    padding: 17px 10px;
     display: block;
-    font-size: .9em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
 .flaticon-arrows::before {
-    color: #002e43;
     font-size: 3em !important;
     text-align: center;
-    padding: 100 px auto;
     display: block;
 }
+
+#inicio .flaticon-arrows::before {
+    color: #002e43;
+    padding-top: 350px;
+    
+}
+
+#tratamientos,#aseguradoras .flaticon-arrows::before {
+    color: #007db6;
+    padding-top: 100px;
+}
+
 
 .element {
     animation: aparece 1s 1s infinite linear alternate;
@@ -184,12 +197,6 @@ MENU
   }
 
 
-  nav .devider {
-    width: 100%;
-    margin: 22px auto;
-    border-bottom: 3px solid rgba(0,46,67,.4);
-   
-}
 
 
 /*------------------------------------------------------
@@ -242,6 +249,7 @@ INICIO
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
 
 
 /*------------------------------------------------------
@@ -312,6 +320,7 @@ TRATAMIENTOS
 }
 
 
+
 #tratamientos [class^="flaticon-"]::before {
      color: #007db6;
     font-size: 3em !important;
@@ -328,7 +337,6 @@ TRATAMIENTOS
     display: inline-block;
     padding: 15px;
     transition: all 1s cubic-bezier(.33,.62,.38,.97);
-    text-align: justify;
     margin-bottom: 30px;
     color: #002e43;
     background-color: rgba(59, 89, 152, 0.2);
@@ -365,7 +373,7 @@ TRATAMIENTOS
 #tratamientos .boton.visible {
     opacity: 1;
     padding: 6px 40px;
-    text-align: justify;
+    
 
 }
 
@@ -462,7 +470,12 @@ footer img{
           width: 300px;
           height: 100vh;
           border-right: 1px solid #999;
-          transform: translateX(-100%)
+
+        }
+
+        nav img{
+
+        display: none;
         }
 
         nav.abierto {
@@ -510,6 +523,7 @@ footer img{
       from { width: 0 }
       to { width: 20% }
     }
+
 
   }
 
