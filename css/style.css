@@ -34,6 +34,7 @@ h2, h3{
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
+    letter-spacing:10px;
 }
 
 
@@ -58,7 +59,7 @@ h4 {
 
 h5{
 
-font-size: 18px;
+font-size: 20px;
 line-height: 20px;
 text-transform: uppercase;
 letter-spacing: 3px;
@@ -82,7 +83,6 @@ letter-spacing: 3px;
     color: #002e43;
     text-align: center;*/
 
-}
 
 .overlay {
     width: 100%;
@@ -145,9 +145,8 @@ MENU
   nav ul {
 	float: right;
 	margin: 20px;
-	
-
 }
+
 
  nav li {
 	display: inline-block;	
@@ -167,10 +166,9 @@ MENU
 
 .flaticon-arrows::before {
     color: #002e43;
-    font-size: 4em !important;
+    font-size: 3em !important;
     text-align: center;
-    padding-bottom:20px;
-    padding-top:100px;
+    padding: 100 px auto;
     display: block;
 }
 
@@ -218,14 +216,20 @@ INICIO
 
 }
 
-#inicio h5 { 
+ #inicio.contenido {
+ position: relative;         
+ text-align: center;
+  }
+
+#inicio article h5 { 
   white-space: nowrap;
   overflow: hidden;
   letter-spacing: .15em;
   border-right: .15em solid orange;
-  animation: typing 6s steps(100, end),
+  position: absolute;
+
+  animation: typing 3s steps(100, end),
   blink-caret .75s step-end infinite;
-  
 }
 
 
@@ -244,13 +248,6 @@ INICIO
 NOSOTROS
 ------------------------------------------------------*/
 
-#nosotros .devider {
-    width: 50%;
-    margin: 0 25%;
-    border-bottom: 3px solid rgba(0,46,67,.3);
-
-}
-
 #nosotros ul{
 
   display: inline-block;
@@ -261,7 +258,45 @@ NOSOTROS
 
 }
 
+.asimetrico {
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  background: #3b5998;
+  position: relative;
+  z-index: 1;
 
+}
+
+.inferior{
+
+  padding: 40px;
+  margin-right:10px;
+
+}
+
+.asimetrico:before, .asimetrico:after {
+    background: inherit;
+    content: '';
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+}
+.asimetrico:before {
+    top: 0;
+    transform: skewY(-6deg);
+    transform-origin: 100% 0;
+}
+ 
+.asimetrico:after {
+    bottom: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+}
 /*------------------------------------------------------
 TRATAMIENTOS
 ------------------------------------------------------*/
@@ -286,16 +321,17 @@ TRATAMIENTOS
 .boton {
     
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px;
     transition: all 1s cubic-bezier(.33,.62,.38,.97);
     text-align: justify;
-
+    margin-bottom: 30px;
+    color: #002e43;
+    background-color:   rgba(59, 89, 152, 0.2);
   }
     
 
   .boton:hover {
     
-    padding: 20px;
     background-color: rgba(0, 46, 67, 0.8);
     text-align:left;
     color: white;
@@ -305,7 +341,6 @@ TRATAMIENTOS
 .boton.azul {
     color: rgba(39, 170, 226, 0.2);
     background-color: #002e43;
-    
 
 }
 
@@ -319,12 +354,13 @@ TRATAMIENTOS
 #tratamientos .boton {
     opacity: 0;
     padding: 7px 50px;
-    transition: all .3s;
+    transition: all .7s;
 }
 
 #tratamientos .boton.visible {
     opacity: 1;
-    padding: 7px 40px;
+    padding: 6px 40px;
+    text-align: justify;
 
 }
 
@@ -336,10 +372,28 @@ ASEGURADORAS
 #aseguradoras{
 
   text-align: center;
-  background: url("../img/background/bg_silla3.jpg") no-repeat fixed center / cover;
-  
+  background: url("../img/background/bg_smile.jpg") no-repeat fixed center / cover;
+  position: relative;
+  padding: 250px 0;
+
 }
 
+#aseguradoras::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(238,238,238,.6);
+
+}
+
+ #aseguradoras.contenido {
+ position: relative;         
+ text-align: center;
+
+  }
 
 
 /*------------------------------------------------------

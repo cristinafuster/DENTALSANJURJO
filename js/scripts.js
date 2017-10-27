@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 function inicializar(){
 
-	$('.overlay').fadeOut(1500);
+	$('.overlay').fadeOut(2000);
 }
 
 function navegar(){
@@ -23,27 +23,18 @@ function navegar(){
 
 	$('html').animate({
 		scrollTop:profundidad
-	}, 900);
+	}, 1100);
 
 }
 
 function efectosScroll(){
 
-/*console.log("funciona");  es una prueba md consola*/
-
 	let scrollActual = $(window).scrollTop();
-
-	/*console.log(scrollActual);*/
-
 	let altoPantalla = $(window).innerHeight() / 2; 
 	let profundidadBoton  = $('#tratamientos .boton').offset().top;
 	let scrollObjetivo = profundidadBoton - altoPantalla;
 
-	/*console.log(scrollObjetivo);*/
-
 	if(scrollActual >= scrollObjetivo) {
-
-		/*alert("llegamos");*/
 
 	$('#tratamientos .boton').addClass('visible');
 
