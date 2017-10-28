@@ -225,7 +225,7 @@ INICIO
   blink-caret .75s step-end infinite;
 }
 
-#inicio small .oculto { 
+#inicio .oculto { 
   display:none;
 }
 
@@ -474,7 +474,7 @@ footer img{
 
     }
 
-    #inicio small .oculto{
+    #inicio .oculto{
     display: inline;
     }
 
@@ -482,6 +482,14 @@ footer img{
       from { width: 0 }
       to { width: 20% }
     }
+
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
 
 
   }
