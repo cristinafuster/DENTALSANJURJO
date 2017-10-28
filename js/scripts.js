@@ -5,7 +5,6 @@ $(window).on('scroll', efectosScroll);
 $(document).ready(function(){
 
 	$('.desplazar').on('click', navegar);
-	$('.barras').on('click', muestraMenu);
 
 });
 
@@ -40,12 +39,5 @@ function efectosScroll(){
 
 	}
 }
-
-
-function muestraMenu(){
-	
-	$('nav').toggleClass('abierto');
-
-	}
 
 
