@@ -68,7 +68,7 @@ letter-spacing: 3px;
 
 h6{
 
-font-size: 1em;
+font-size: 1.2em;
 line-height: 30px;
 text-transform: uppercase;
 letter-spacing: 3px;
@@ -172,7 +172,7 @@ MENU
     
 }
 
-#tratamientos,#aseguradoras .flaticon-arrows::before {
+#tratamientos.flaticon-arrows::before {
     color: #007db6;
     padding-top: 100px;
 }
@@ -213,7 +213,6 @@ INICIO
   top: 0;
   left: 0;
   background-color: rgba(238,238,238,.4);
-
 }
 
 #inicio article h5 { 
@@ -221,9 +220,17 @@ INICIO
   overflow: hidden;
   letter-spacing: .15em;
   border-right: .15em solid orange;
-  animation: typing 3s steps(100, end),
+  animation: typing 6s steps(100, end),
   blink-caret .75s step-end infinite;
+  
 }
+
+
+#inicio .padding{
+
+  padding-top:100px;
+}
+
 
 #inicio .oculto { 
   display:none;
@@ -287,13 +294,13 @@ NOSOTROS
 }
 .asimetrico:before {
     top: 0;
-    transform: skewY(-6deg);
+    transform: skewY(-4deg);
     transform-origin: 100% 0;
 }
  
 .asimetrico:after {
     bottom: 0;
-    transform: skewY(-5deg);
+    transform: skewY(-3deg);
     transform-origin: 100%;
 }
 /*------------------------------------------------------
@@ -304,7 +311,6 @@ TRATAMIENTOS
 
   background-color: #fff;
 }
-
 
 
 #tratamientos [class^="flaticon-"]::before {
@@ -321,27 +327,21 @@ TRATAMIENTOS
 .boton {
     
     display: inline-block;
-    padding: 15px;
+    padding: 60px auto;
     transition: all 1s cubic-bezier(.33,.62,.38,.97);
-    margin-bottom: 30px;
-    color: #002e43;
-    background-color: rgba(59, 89, 152, 0.2);
+    color: #002e43; 
+    text-align:center;
+    
   }
     
 
   .boton:hover {
     
-    background-color: rgba(0, 46, 67, 0.8);
-    text-align:left;
-    color: white;
+    background-color: rgba(59, 89, 152, 0.2);
+    margin-bottom: 40px;
 
   }
 
-.boton.azul {
-    color: rgba(39, 170, 226, 0.2);
-    background-color: #002e43;
-
-}
 
 .boton.naranja {
 
@@ -352,13 +352,14 @@ TRATAMIENTOS
 
 #tratamientos .boton {
     opacity: 0;
-    padding: 7px 50px;
+    padding:  50px auto;
     transition: all .7s;
 }
 
 #tratamientos .boton.visible {
     opacity: 1;
-    padding: 6px 40px;
+    padding: 40px auto;
+    
     
 
 }
@@ -455,7 +456,7 @@ footer img{
     iframe{
 
         float: none;
-        margin: 40px 10%;
+        margin: 0;
         display: block;
         text-align: center;
         padding:20px 0;
@@ -478,14 +479,9 @@ footer img{
     display: inline;
     }
 
-    #inicio @keyframes typing {
-      from { width: 0 }
-      to { width: 20% }
-    }
-
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-bottom: 30px;
     font-weight: 400;
 }
