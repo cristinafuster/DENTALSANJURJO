@@ -66,6 +66,15 @@ letter-spacing: 3px;
 
 }
 
+h6{
+
+font-size: 1em;
+line-height: 30px;
+text-transform: uppercase;
+letter-spacing: 3px;
+
+}
+
 .blanco{
   color: white;
 }
@@ -124,7 +133,7 @@ MENU
  nav img {
 	  height: 90px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
 
 }
 
@@ -145,7 +154,7 @@ MENU
     line-height: 60px;
     padding: 17px 10px;
     display: block;
-    font-size: 1em;
+    font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -207,20 +216,17 @@ INICIO
 
 }
 
- #inicio.contenido {
- position: relative;         
- text-align: left;
-
-  }
-
 #inicio article h5 { 
   white-space: nowrap;
   overflow: hidden;
   letter-spacing: .15em;
   border-right: .15em solid orange;
-  position: absolute;
   animation: typing 3s steps(100, end),
   blink-caret .75s step-end infinite;
+}
+
+#inicio small .oculto { 
+  display:none;
 }
 
 
@@ -464,12 +470,12 @@ footer img{
   }
 
     #inicio h5 {
-        font-size:1em;
+      display: none;
 
     }
 
-    #inicio article h5{
-      display:none;
+    #inicio small .oculto{
+    display: inline;
     }
 
     #inicio @keyframes typing {
