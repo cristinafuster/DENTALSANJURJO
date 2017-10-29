@@ -23,6 +23,8 @@ font-size: .8em;
 p {
     font-family: "Open Sans", sans-serif;
     line-height: 2em;
+    font-size: 1em;
+
     }
 
 
@@ -45,9 +47,10 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2em;
-    letter-spacing: 7px;
+    font-size: 1em;
+    letter-spacing: 6px;
     text-align: center;
+    line-height: 1.4em;
 
 }
 
@@ -181,11 +184,6 @@ MENU
     color: #002e43;
     padding-top: 350px;
     
-}
-
-#tratamientos.flaticon-arrows::before {
-    color: #007db6;
-    padding-top: 100px;
 }
 
 
@@ -338,10 +336,12 @@ TRATAMIENTOS
 .boton {
     
     display: inline-block;
-    padding: 60px auto;
+    padding: 10px;
     transition: all 1s cubic-bezier(.33,.62,.38,.97);
     color: #002e43; 
     text-align:center;
+    margin-top: 10px;
+    overflow:hidden;
     
   }
     
@@ -349,7 +349,8 @@ TRATAMIENTOS
   .boton:hover {
     
     background-color: rgba(59, 89, 152, 0.2);
-    margin-bottom: 40px;
+    
+    padding: 50px auto;
 
   }
 
@@ -357,7 +358,7 @@ TRATAMIENTOS
 .boton.naranja {
 
     color: #000;
-    border: 1px solid rgba(0,46,67,.2);
+    border: 2px solid rgba(0,46,67,.2);
     background: orange;
 }
 
@@ -365,6 +366,7 @@ TRATAMIENTOS
     opacity: 0;
     padding:  50px auto;
     transition: all .7s;
+    min-height: 280px;
 }
 
 #tratamientos .boton.visible {
@@ -492,8 +494,8 @@ footer img{
 
 
 h2 {
-    font-size: 1.6em;
-    margin-bottom: 30px;
+    font-size: 1.2em;
+    margin: 0 auto;
     font-weight: 400;
 }
 
@@ -517,5 +519,7 @@ h2 {
 
 
     /*: color: #3bbeb3;*/
+
+
 
     
