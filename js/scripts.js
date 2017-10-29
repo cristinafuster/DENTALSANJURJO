@@ -5,6 +5,7 @@ $(window).on('scroll', efectosScroll);
 $(document).ready(function(){
 
 	$('.desplazar').on('click', navegar);
+	$('nav').addClass('visible');
 
 });
 

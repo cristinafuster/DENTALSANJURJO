@@ -120,20 +120,29 @@ MENU
 ------------------------------------------------------*/
 
 
-  nav {
+   nav {
   	width: 100%;
-  	height: 110px;	
-  	background-color: #eee;
+  	height: 100px;	
     letter-spacing: 2px;
     top: 0;
     left:0;
-    transition: all .5s;
+    opacity:0;
+    transform: translateY(-50px);
+    transition: 3s all 1s;
   }
+
+ .visible{
+    opacity:1;
+    transform: translateY(0px);
+    background-color: #eee;
+
+}
+
 
  nav img {
 	  height: 90px;
-    margin-left: 20px;
-    margin-top: 5px;
+    margin-left: 15px;
+    margin-top: 0px;
 
 }
 
@@ -154,10 +163,12 @@ MENU
     line-height: 60px;
     padding: 17px 10px;
     display: block;
-    font-size: 1.1em;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+
 
 
 .flaticon-arrows::before {
