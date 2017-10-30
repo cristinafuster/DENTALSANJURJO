@@ -16,7 +16,7 @@ body {
 
 aside{
 
-font-size: .9em;
+    font-size: .9em;
 
 }
 
@@ -78,10 +78,6 @@ letter-spacing: 3px;
 
 }
 
-.blanco{
-  color: white;
-}
-
 .padding-section {
     padding: 60px;
     
@@ -102,13 +98,13 @@ letter-spacing: 3px;
     top: calc(50% - 50px);
     left: calc(50% - 50px);
     position: absolute;
-  height: 100px;
-  width: 100px;
-  animation: rotate 2s infinite linear;
-  border: 2px solid #007db6;
-  border-right-color: transparent;
-  border-radius: 50%;
-}
+    height: 100px;
+    width: 100px;
+    animation: rotate 2s infinite linear;
+    border: 2px solid #007db6;
+    border-right-color: transparent;
+    border-radius: 50%;
+  }
 
 @keyframes rotate {
   0%    { transform: rotate(0deg); }
@@ -127,11 +123,11 @@ letter-spacing: 3px;
 
 #inicio .flaticon-arrows::before {
     padding-top: 350px;
-    
+
 }
 
 #aseguradoras .flaticon-arrows::before {
-    padding-top: 120px;
+    padding-top: 100px;
     
 }
 
@@ -188,7 +184,6 @@ MENU
  .menu li {
   	display: inline-block;	
     list-style: none;
-    color: orange;
 
 }
 
@@ -201,6 +196,7 @@ MENU
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-decoration:none;
 }
 
 
@@ -214,6 +210,7 @@ INICIO
   margin-top: 20px;
   height: 100vh;
   position: relative;
+
 
 }   
 
@@ -334,7 +331,6 @@ TRATAMIENTOS
     line-height: 1em;
 
 }
-
 
 .boton {
     
@@ -522,7 +518,7 @@ AVISO LEGAL
     
     .boton:hover {
 
-    padding: 15px;
+    padding-left: 15px;
   
   }
 
@@ -537,9 +533,8 @@ AVISO LEGAL
 
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 0 auto;
-    font-weight: 400;
 }
 
 
