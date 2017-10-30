@@ -16,7 +16,7 @@ body {
 
 aside{
 
-font-size: .8em;
+font-size: .9em;
 
 }
 
@@ -62,7 +62,7 @@ h4 {
 
 h5{
 
-font-size: 1.3em;
+font-size: 1.4em;
 line-height: 20px;
 text-transform: uppercase;
 letter-spacing: 3px;
@@ -118,12 +118,41 @@ letter-spacing: 3px;
 
 
 
+.flaticon-arrows::before {
+    font-size: 3em !important;
+    text-align: center;
+    display: block;
+    color: #002e43;
+}
+
+#inicio .flaticon-arrows::before {
+    padding-top: 350px;
+    
+}
+
+#aseguradoras .flaticon-arrows::before {
+    padding-top: 120px;
+    
+}
+
+.element {
+    animation: aparece 1s 1s infinite linear alternate;
+}
+
+@keyframes aparece {
+
+    from{opacity: 0;}
+
+    to {opacity: 1; }
+    }
+
+
 /*------------------------------------------------------
 MENU
 ------------------------------------------------------*/
 
 
-   nav {
+.menu{
   	width: 100%;
   	height: 100px;	
     letter-spacing: 2px;
@@ -132,6 +161,7 @@ MENU
     opacity:0;
     transform: translateY(-50px);
     transition: 3s all 1s;
+
   }
 
  .visible{
@@ -142,27 +172,29 @@ MENU
 }
 
 
- nav img {
-	  height: 90px;
+ .menu img {
+	  height: 95px;
     margin-left: 15px;
     margin-top: 0px;
 
 }
 
-  nav ul {
+  .menu ul {
   	float: right;
   	margin-right: 20px;
 }
 
 
- nav li {
+ .menu li {
   	display: inline-block;	
     list-style: none;
+    color: orange;
+
 }
 
 
- nav a {
-	   color:#002e43;
+.menu li a {
+	  color:#002e43;
     line-height: 60px;
     padding: 17px 10px;
     display: block;
@@ -170,35 +202,6 @@ MENU
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-
-
-
-.flaticon-arrows::before {
-    font-size: 3em !important;
-    text-align: center;
-    display: block;
-}
-
-#inicio .flaticon-arrows::before {
-    color: #002e43;
-    padding-top: 350px;
-    
-}
-
-
-.element {
-    animation: aparece 1s 1s infinite linear alternate;
-}
-
-@keyframes aparece {
-
-  from{opacity: 0;}
-
-  to {opacity: 1; }
-  }
-
-
 
 
 /*------------------------------------------------------
@@ -373,8 +376,6 @@ TRATAMIENTOS
     opacity: 1;
     padding: 40px auto;
     
-    
-
 }
 
 /*------------------------------------------------------
@@ -385,9 +386,9 @@ ASEGURADORAS
 #aseguradoras{
 
   text-align: center;
-  background: url("../img/background/bg_smile.jpg") no-repeat fixed center / cover;
+  background: url("../img/background/bg_silla3.jpg") no-repeat fixed center / cover;
   position: relative;
-  padding: 250px 0;
+  padding: 100px 0;
 
 }
 
@@ -418,6 +419,7 @@ CONTACTO
     display: block;
     float:left;
     padding: 10px;
+
 }
 
 
@@ -460,6 +462,47 @@ footer img{
 }
 
 
+/*------------------------------------------------------
+AVISO LEGAL
+------------------------------------------------------*/
+
+
+#avisolegal li{
+
+  padding:10px;
+  
+}
+
+
+#avisolegal h1, #avisolegal h2{
+
+  
+  text-align: left;
+  text-transform: none;
+  margin-bottom: 10px;
+
+}
+
+#avisolegal h1{
+
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+
+}
+
+
+#avisolegal h2{
+
+  line-height: 7px;
+  font-size: 1.2em;
+  letter-spacing: .6px;
+  font-weight: 600;
+
+}
+
+
+
 @media screen and (max-width: 800px) {
 
     nav > ul {
@@ -498,7 +541,6 @@ h2 {
     margin: 0 auto;
     font-weight: 400;
 }
-
 
 
   }
