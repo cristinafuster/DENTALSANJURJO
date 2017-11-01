@@ -61,11 +61,12 @@ h4 {
 }
 
 h5{
-
-font-size: 1.5em;
+font-family: "Dosis", sans-serif;
+font-size: 2em;
 text-transform: uppercase;
-letter-spacing: 3px;
-line-height: 1.5em;
+letter-spacing: 5px;
+line-height: 1.7em;
+font-weight:700;
 
 }
 
@@ -110,8 +111,6 @@ letter-spacing: 3px;
   0%    { transform: rotate(0deg); }
   100%  { transform: rotate(360deg); }
 }
-
-
 
 
 .flaticon-arrows::before {
@@ -224,10 +223,17 @@ INICIO
   background-color: rgba(238,238,238,.4);
 }
 
+#inicio .paddingLateral{
+padding-left:210px;
+padding-top:200px;
+
+}
+
 
 #escrito{
 
   display: inline-block;
+
 }
 
 .typed-cursor {
@@ -378,12 +384,10 @@ ASEGURADORAS
 
 }
 
- #aseguradoras.texto {
- position: relative;         
- text-align: center;
-
+ #aseguradoras p {
+ font-size:1.1em;
+ 
   }
-
 
 /*------------------------------------------------------
 CONTACTO
@@ -500,18 +504,16 @@ AVISO LEGAL
   }
 
 
-#escrito{
+    #escrito{
 
-  font-size: 1.2em;
-}
-
-
+      font-size: 1.2em;
+    }
 
 
-h2 {
-    font-size: 1.3em;
-    margin: 0 auto;
-}
+    h2 {
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
 
 
   }
