@@ -115,20 +115,12 @@ letter-spacing: 3px;
 
 .flaticon-arrows::before {
     font-size: 3em !important;
-    text-align: center;
     display: block;
     color: #002e43;
+    text-align:center;
 }
 
-#inicio .flaticon-arrows::before {
-    padding-top: 350px;
 
-}
-
-#aseguradoras .flaticon-arrows::before {
-    padding-top: 100px;
-    
-}
 
 .element {
     animation: aparece 1s 1s infinite linear alternate;
@@ -242,7 +234,31 @@ padding-top:200px;
 }
 
 
+.breadcrumbs {
+        margin: 200px;
+        text-align: center;
+      }
 
+      .breadcrumbs li {
+        display: inline-block;
+        list-style: none;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .breadcrumbs li::after {
+          content: " / ";
+          margin: 0 10px;
+          opacity: .4;
+      }
+
+      .breadcrumbs li:last-of-type::after {
+          content: "";    /* el último no incluye separador */
+      }
+
+      .breadcrumbs li a {
+        color: initial;
+      }
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
