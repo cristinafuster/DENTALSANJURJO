@@ -7,7 +7,17 @@ $(document).ready(function(){
 	$('.desplazar').on('click', navegar);
 	$('nav').addClass('visible');
 
+
+/* PLUGIN TYPED.JS */
+	var typed = new Typed('#escrito', {
+	  strings: ["Su clínica dental en Ribeira", "Su clínica dental en Ribeira: más de 20 años cuidando su boca"],
+	  typeSpeed: 60,
+	  loop: true,
+	  smartBackspace: true
+	});
+
 });
+
 
 
 function inicializar(){

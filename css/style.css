@@ -62,10 +62,10 @@ h4 {
 
 h5{
 
-font-size: 1.4em;
-line-height: 20px;
+font-size: 1.5em;
 text-transform: uppercase;
 letter-spacing: 3px;
+line-height: 1.5em;
 
 }
 
@@ -224,36 +224,15 @@ INICIO
   background-color: rgba(238,238,238,.4);
 }
 
-#inicio article h5 { 
-  white-space: nowrap;
-  overflow: hidden;
-  letter-spacing: .15em;
-  border-right: .15em solid orange;
-  animation: typing 6s steps(100, end),
-  blink-caret .75s step-end infinite;
-  
+
+#escrito{
+
+  display: inline-block;
 }
 
-
-#inicio .padding{
-
-  padding-top:100px;
-}
-
-
-#inicio .oculto { 
-  display:none;
-}
-
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+.typed-cursor {
+    font-size: 1.5em;
+    margin-left: 1px;
 }
 
 
@@ -501,9 +480,7 @@ AVISO LEGAL
 
 @media screen and (max-width: 800px) {
 
-    nav > ul {
-        display: none;
-    }
+
 
     iframe{
 
@@ -518,18 +495,17 @@ AVISO LEGAL
     
     .boton:hover {
 
-    padding-left: 15px;
+    padding-left: 0px;
   
   }
 
-    #inicio h5 {
-      display: none;
 
-    }
+#escrito{
 
-    #inicio .oculto{
-    display: inline;
-    }
+  font-size: 1.2em;
+}
+
+
 
 
 h2 {
