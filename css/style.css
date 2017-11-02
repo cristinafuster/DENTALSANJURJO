@@ -118,9 +118,9 @@ letter-spacing: 3px;
     display: block;
     color: #002e43;
     text-align:center;
+    padding-top:25px;
+
 }
-
-
 
 .element {
     animation: aparece 1s 1s infinite linear alternate;
@@ -199,9 +199,8 @@ INICIO
 
   background: url("../img/background/bg_toothpaste.jpg") no-repeat fixed center top / cover;
   margin-top: 20px;
-  height: 100vh;
+  height: 350px;
   position: relative;
-
 
 }   
 
@@ -216,11 +215,9 @@ INICIO
 }
 
 #inicio .paddingLateral{
-padding-left:210px;
-padding-top:200px;
+  margin-left:170px;
 
 }
-
 
 #escrito{
 
@@ -229,36 +226,39 @@ padding-top:200px;
 }
 
 .typed-cursor {
-    font-size: 1.5em;
-    margin-left: 1px;
+  font-size: 3em;
+  margin-left:1px;
+
 }
 
 
 .breadcrumbs {
-        margin: 200px;
-        text-align: center;
-      }
+  text-align: center;
+  padding:40px;
+  background:#eee;
 
-      .breadcrumbs li {
-        display: inline-block;
-        list-style: none;
-        text-align: center;
-        text-transform: uppercase;
-      }
+}
 
-      .breadcrumbs li::after {
-          content: " / ";
-          margin: 0 10px;
-          opacity: .4;
-      }
+.breadcrumbs li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-      .breadcrumbs li:last-of-type::after {
-          content: "";    /* el último no incluye separador */
-      }
+.breadcrumbs li::after {
+  content: " / ";
+  margin: 0 10px;
+  opacity: .4;
+}
 
-      .breadcrumbs li a {
-        color: initial;
-      }
+.breadcrumbs li:last-of-type::after {
+  content: ""; 
+}
+
+.breadcrumbs li a {
+  color: initial;
+  }
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
@@ -501,38 +501,58 @@ AVISO LEGAL
 @media screen and (max-width: 800px) {
 
 
+nav>ul{
 
-    iframe{
+  display:none;
+}
 
-        float: none;
-        margin: 0;
-        display: block;
-        text-align: center;
-        padding:20px 0;
-        width: 70%;
 
-       }
-    
-    .boton:hover {
+#inicio .paddingLateral{
+  margin-left:0px;
+
+}
+
+  #escrito{
+
+    font-size: 1.4em;
+    display: inline-block;
+
+
+  }
+
+  .typed-cursor {
+    font-size: 1.5em;
+
+  }
+
+.breadcrumbs li::after {
+  margin: 0;
+
+}
+
+  h2 {
+    font-size: 1.5em;
+    margin-left: 0;
+  }
+
+  iframe{
+
+    float: none;
+    margin: 0;
+    display: block;
+    text-align: center;
+    padding:20px 0;
+    width: 70%;
+
+  }
+      
+  .boton:hover {
 
     padding-left: 0px;
-  
+    
   }
 
-
-    #escrito{
-
-      font-size: 1.2em;
-    }
-
-
-    h2 {
-        font-size: 1.5em;
-        margin: 0 auto;
-    }
-
-
-  }
+ }
 
 
 
