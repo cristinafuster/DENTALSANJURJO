@@ -10,9 +10,9 @@ $(document).ready(function(){
 
 /* PLUGIN TYPED.JS */
 	var typed = new Typed('#escrito', {
-	  strings: ["Su clínica dental ^500 en Ribeira", "Más de ^500 20 años ^300 cuidando su boca"],
+	  strings: ["Más de ^200 20 años ^200 cuidando su boca"],
 	  typeSpeed: 80,
-	  loop: true,
+	  loop: false,
 	});
 
 });

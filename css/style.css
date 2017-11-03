@@ -197,9 +197,8 @@ INICIO
 
 #inicio{
 
-  background: url("../img/background/bg_toothpaste.jpg") no-repeat fixed center top / cover;
-  margin-top: 20px;
-  height: 350px;
+  background: url("../img/background/bg_toothpaste.jpg") no-repeat fixed center / cover;
+  height: 100vh;
   position: relative;
 
 }   
@@ -214,14 +213,14 @@ INICIO
   background-color: rgba(238,238,238,.4);
 }
 
-#inicio .paddingLateral{
-  margin-left:170px;
+.paddingExtra{
+padding-left: 150px;
+padding-top:180px;
 
 }
 
 #escrito{
-
-  display: inline-block;
+  display: inline;
 
 }
 
@@ -232,24 +231,18 @@ INICIO
 }
 
 
-.breadcrumbs {
-  text-align: center;
-  padding:40px;
-  background:#eee;
-
-}
-
 .breadcrumbs li {
   display: inline-block;
   list-style: none;
   text-align: center;
   text-transform: uppercase;
+
 }
 
 .breadcrumbs li::after {
   content: " / ";
   margin: 0 10px;
-  opacity: .4;
+  
 }
 
 .breadcrumbs li:last-of-type::after {
@@ -506,27 +499,33 @@ nav>ul{
   display:none;
 }
 
-
-#inicio .paddingLateral{
-  margin-left:0px;
-
+#inicio{
+  height: 360px;
 }
 
+
+.paddingExtra{
+padding-left: 0px;
+padding-top:0px;
+
+}
   #escrito{
 
-    font-size: 1.4em;
+    font-size: 1.6em;
     display: inline-block;
+    margin-top:0;
+    margin-left:0;
 
 
   }
 
   .typed-cursor {
-    font-size: 1.5em;
+    display:none;
 
   }
 
-.breadcrumbs li::after {
-  margin: 0;
+.breadcrumbs {
+  display:none;
 
 }
 
@@ -552,7 +551,12 @@ nav>ul{
     
   }
 
- }
+  .devider{
+
+    display:none;
+  }
+
+
 
 
 
@@ -573,4 +577,4 @@ nav>ul{
 
 
 
-    
+    }
