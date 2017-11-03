@@ -407,6 +407,7 @@ CONTACTO
     display: block;
     float:left;
     padding: 10px;
+    margin-top:20px;
 
 }
 
@@ -514,7 +515,7 @@ AVISO LEGAL
 
   .padding-section{
 
-    padding: 35px 8px;
+    padding: 25px 2px;
   }
 
   .paddingExtra{
@@ -566,11 +567,6 @@ AVISO LEGAL
       
   }
 
-  .devider{
-
-    display:none;
-  }
-
 
   #contacto [class^="flaticon-"]::before {
     color: #002e43;
@@ -578,6 +574,7 @@ AVISO LEGAL
     display: block;
     float:left;
     padding: 5px;
+    margin:0;
 
 }
 
