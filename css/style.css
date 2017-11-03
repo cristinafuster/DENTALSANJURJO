@@ -410,6 +410,15 @@ CONTACTO
 
 }
 
+.fa-mobile {
+    color: #002e43;
+    font-size: 2em !important;
+    display: block;
+    float:left;
+    padding: 10px;
+
+}
+
 
 #contacto article .devider {
     width: 60%;
@@ -430,15 +439,15 @@ CONTACTO
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
-  footer .devider {
-    width: 100%;
-    margin: 20px;
-    border-bottom: 1px solid rgba(0,46,67,.2);
+footer .devider {
+  width: 100%;
+  margin: 20px;
+  border-bottom: 1px solid rgba(0,46,67,.2);
 }
 
 
 footer a {
-    color: #002e43;
+  color: #002e43;
 }
 
 footer img{
@@ -494,21 +503,27 @@ AVISO LEGAL
 @media screen and (max-width: 800px) {
 
 
-nav>ul{
+  nav>ul{
 
-  display:none;
-}
+    display:none;
+  }
 
-#inicio{
-  height: 360px;
-}
+  #inicio{
+    height: 360px;
+  }
 
+  .padding-section{
 
-.paddingExtra{
-padding-left: 0px;
-padding-top:0px;
+    padding: 35px 8px;
+  }
 
-}
+  .paddingExtra{
+
+    padding-left: 0px;
+    padding-top:0px;
+
+  }
+
   #escrito{
 
     font-size: 1.6em;
@@ -516,22 +531,22 @@ padding-top:0px;
     margin-top:0;
     margin-left:0;
 
-
   }
 
   .typed-cursor {
+
     display:none;
 
   }
 
-.breadcrumbs {
-  display:none;
+  .breadcrumbs {
 
-}
+    display:none;
+
+  }
 
   h2 {
     font-size: 1.5em;
-    margin-left: 0;
   }
 
   iframe{
@@ -544,11 +559,11 @@ padding-top:0px;
     width: 70%;
 
   }
-      
+        
   .boton:hover {
 
     padding-left: 0px;
-    
+      
   }
 
   .devider{
@@ -557,10 +572,16 @@ padding-top:0px;
   }
 
 
+  #contacto [class^="flaticon-"]::before {
+    color: #002e43;
+    font-size: 1.5em !important;
+    display: block;
+    float:left;
+    padding: 5px;
 
+}
 
-
-
+}
 
     /*colores---------*/
 
@@ -577,4 +598,3 @@ padding-top:0px;
 
 
 
-    }
