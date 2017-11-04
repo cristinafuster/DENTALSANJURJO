@@ -145,51 +145,52 @@ HERO
         top: 0px;
         right: 20px;
         font-size: 3em;
+        text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
       }
 
  nav{
   	width: 100%;
-  	height: 100px;
-    background:transparent;	
+  	height: 70px;
+    background:#eee;	
     letter-spacing: 2px;
     top: 0;
     left:0;
     transition: all .5s;
-    position: fixed;
+    position: absolute;
 
   }
 
-
-
- .menu img {
+ nav img {
 	  height: 80px;
     margin-left: 15px;
     margin-top: 0px;
 
+
 }
 
-  .menu ul {
+ nav ul {
   	float: right;
   	margin-right: 20px;
 }
 
 
- .menu li {
+ nav li {
   	display: inline-block;	
     list-style: none;
 
 }
 
 
-.menu li a {
+nav li a {
 	  color:#002e43;
     line-height: 60px;
     padding: 17px 10px;
     display: block;
-    font-size: 1em;
+    font-size: .8em;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration:none;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
 }
 
 /*------------------------------------------------------
@@ -205,6 +206,22 @@ INICIO
     font-weight:700;
 
 }
+
+.paddingExtra{
+
+  padding-top: 100px;
+}
+
+#escrito {
+    display: inline-block;
+}
+
+
+.typed-cursor {
+    font-size: 1.5em;
+    margin-left: 1px
+}
+
 
 
 .breadcrumbs {
@@ -230,7 +247,7 @@ INICIO
   }
 
   .breadcrumbs li a {
-        color: initial;
+        color: #fff;
   }
 /*------------------------------------------------------
 NOSOTROS
@@ -475,6 +492,7 @@ AVISO LEGAL
 
   .barras {
     display: block;
+    z-index: 3;
   }
 
   nav {
@@ -506,9 +524,9 @@ AVISO LEGAL
     width: 300px;
   }
 
-  .menu img{
+  nav img{
 
-    margin-left: 95px;
+    margin-left: 110px;
 
   }
 
@@ -518,16 +536,11 @@ AVISO LEGAL
     margin: 0;
     display: block;
     text-align: center;
-    padding:20px 0;
-    width: 70%;
+    width: 100%;
+    
 
   }
     
-  .boton:hover {
-
-    padding-left: 0px;
-  
-  }
 
   .padding-section{
     padding:40px;
@@ -554,10 +567,26 @@ AVISO LEGAL
 
   }
 
+#aseguradoras p {
+
+    font-size: 1em;
+
+    }
+
 
   h2 {
-    font-size: 1.5em;
-    margin: 0 auto;
+    font-size: 1.4em;
+
+  }
+
+  #contacto [class^="flaticon-"]::before {
+    font-size: 1.5em !important;
+    padding-left: 5px;
+
+  }
+
+  #contacto article .devider {
+    display: none;
   }
 
 
