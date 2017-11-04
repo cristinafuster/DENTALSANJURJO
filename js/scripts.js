@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 		/* PLUGIN TYPED.JS */
 	var typed = new Typed('#escrito', {
-	  strings: ["Más de 20 años cuidando su boca"],
+	  strings: ["Su clínica dental en Ribeira", "Más de 20 años cuidando su boca"],
 	  typeSpeed: 60,
 	  loop: true,
 	  smartBackspace: true
