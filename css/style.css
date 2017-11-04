@@ -42,7 +42,6 @@ h2, h3{
 
 h2 {
     font-size: 2em;
-    margin-bottom: 40px;
     font-weight: 400;
 }
 
@@ -60,22 +59,13 @@ h4 {
     text-align: left;
 }
 
-h5{
-font-family: "Dosis", sans-serif;
-font-size: 2em;
-text-transform: uppercase;
-letter-spacing: 5px;
-line-height: 1.7em;
-font-weight:700;
-
-}
-
-h6{
-
-font-size: 1.2em;
-line-height: 30px;
-text-transform: uppercase;
-letter-spacing: 3px;
+#inicio span{
+    font-family: "Dosis", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.7em;
+    font-weight:700;
 
 }
 
@@ -118,9 +108,9 @@ letter-spacing: 3px;
     display: block;
     color: #002e43;
     text-align:center;
+    padding: 60px 1px;
+
 }
-
-
 
 .element {
     animation: aparece 1s 1s infinite linear alternate;
@@ -135,32 +125,51 @@ letter-spacing: 3px;
 
 
 /*------------------------------------------------------
-MENU
+HERO
 ------------------------------------------------------*/
+.hero{
 
+  background: url("../img/background/bg_toothpaste.jpg") no-repeat fixed center top / cover;
+  height: 100vh;
+  position: relative;
 
-.menu{
-  	width: 100%;
-  	height: 100px;	
-    letter-spacing: 2px;
-    top: 0;
-    left:0;
-    opacity:0;
-    transform: translateY(-50px);
-    transition: 3s all 1s;
+  }   
+
+.hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(238,238,238,.4);
 
   }
 
- .visible{
-    opacity:1;
-    transform: translateY(0px);
-    background-color: #eee;
+.barras {
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        top: 0px;
+        right: 20px;
+        font-size: 3em;
+      }
 
-}
+ nav{
+  	width: 100%;
+  	height: 100px;
+    background:transparent;	
+    letter-spacing: 2px;
+    top: 0;
+    left:0;
+    transition: all .5s;
+
+  }
+
 
 
  .menu img {
-	  height: 95px;
+	  height: 80px;
     margin-left: 15px;
     margin-top: 0px;
 
@@ -190,75 +199,38 @@ MENU
     text-decoration:none;
 }
 
-
 /*------------------------------------------------------
 INICIO
 ------------------------------------------------------*/
 
-#inicio{
 
-  background: url("../img/background/bg_toothpaste.jpg") no-repeat fixed center top / cover;
-  margin-top: 20px;
-  height: 100vh;
-  position: relative;
-
-
-}   
-
-#inicio::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(238,238,238,.4);
-}
-
-#inicio .paddingLateral{
-padding-left:210px;
-padding-top:200px;
-
-}
-
-
-#escrito{
-
-  display: inline-block;
-
-}
-
-.typed-cursor {
-    font-size: 1.5em;
-    margin-left: 1px;
-}
 
 
 .breadcrumbs {
-        margin: 200px;
-        text-align: center;
-      }
+  margin: 100px;
+  
+  }
 
-      .breadcrumbs li {
-        display: inline-block;
-        list-style: none;
-        text-align: center;
-        text-transform: uppercase;
-      }
+.breadcrumbs li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  }
 
-      .breadcrumbs li::after {
-          content: " / ";
-          margin: 0 10px;
-          opacity: .4;
-      }
+.breadcrumbs li::after {
+  content: " / ";
+  margin: 0 10px;
+  opacity: .4;
+ }
 
-      .breadcrumbs li:last-of-type::after {
-          content: "";    /* el último no incluye separador */
-      }
+ .breadcrumbs li:last-of-type::after {
+  content: "";   
+  }
 
-      .breadcrumbs li a {
+  .breadcrumbs li a {
         color: initial;
-      }
+  }
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
@@ -500,6 +472,38 @@ AVISO LEGAL
 
 @media screen and (max-width: 800px) {
 
+        .barras {
+          display: block;
+        }
+
+        nav {
+          width: 300px;
+          height: 100vh;
+          border-right: 1px solid #999;
+          transition: all .5s;
+          transform: translateX(-100%);
+          background:#eee;
+
+        }
+
+        nav.abierto {
+          transform: translateX(0)
+        }
+
+        nav ul {
+          float: none;
+          margin: 0;
+          padding: 0
+
+        }
+
+        nav li {
+          display: block;
+          list-style: none;
+          text-align: center;
+          width: 300px;
+        }
+
 
 
     iframe{
@@ -519,10 +523,29 @@ AVISO LEGAL
   
   }
 
+  .padding-section{
+    padding:40px;
+  }
 
-    #escrito{
 
-      font-size: 1.2em;
+.flaticon-arrows::before {
+    font-size: 2em !important;
+    padding-top: 50px;
+
+}
+
+    #inicio span{
+
+      font-size: 1.3em;
+      text-align:justify;
+
+    }
+
+
+    .breadcrumbs {
+
+     display:none;
+
     }
 
 
