@@ -59,15 +59,7 @@ h4 {
     text-align: left;
 }
 
-#inicio span{
-    font-family: "Dosis", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 1.7em;
-    font-weight:700;
 
-}
 
 .padding-section {
     padding: 60px;
@@ -203,7 +195,15 @@ HERO
 INICIO
 ------------------------------------------------------*/
 
+#inicio span{
+    font-family: "Dosis", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.7em;
+    font-weight:700;
 
+}
 
 
 .breadcrumbs {
@@ -472,23 +472,24 @@ AVISO LEGAL
 
 @media screen and (max-width: 800px) {
 
-        .barras {
-          display: block;
-        }
+  .barras {
+    display: block;
+  }
 
-        nav {
-          width: 300px;
-          height: 100vh;
-          border-right: 1px solid #999;
-          transition: all .5s;
-          transform: translateX(-100%);
-          background:#eee;
+  nav {
+    width: 300px;
+    height: 100vh;
+    border-right: 1px solid #999;
+    transition: all .5s;
+    transform: translateX(-100%);
+    background:#eee;
 
-        }
+  }
 
-        nav.abierto {
-          transform: translateX(0)
-        }
+  nav.abierto {
+    transform: translateX(0)
+    
+  }
 
         nav ul {
           float: none;
@@ -504,7 +505,11 @@ AVISO LEGAL
           width: 300px;
         }
 
+nav img{
 
+margin-left: 95px;
+
+}
 
     iframe{
 

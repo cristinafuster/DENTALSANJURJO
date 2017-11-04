@@ -27,9 +27,9 @@ function navegar(){
 
 }
 
-			function muestraMenu(){
-				$('nav').toggleClass('abierto');
-			}
+function muestraMenu(){
+	$('nav').toggleClass('abierto');
+	}
 
 function efectosScroll(){
 
