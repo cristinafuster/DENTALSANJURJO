@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 function inicializar(){
 
-	$('.overlay').fadeOut(1000);
+	$('.overlay').fadeOut(1200);
 }
 
 function navegar(){

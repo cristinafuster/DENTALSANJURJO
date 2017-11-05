@@ -30,6 +30,8 @@ p {
 
 h1 span {
 	display: none;
+  color: #002e43;
+  font-size:0.95em;
 }
 
 h2, h3{
@@ -78,15 +80,17 @@ h4 {
 }
 
 .spinner {
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     animation: rotate 2s infinite linear;
-    border: 2px solid #007db6;
+    
     border-right-color: transparent;
-    border-radius: 50%;
+    border-radius: 100%;
+    background: url("../img/logo/logo_spinner.png") no-repeat center / cover;
+
   }
 
 @keyframes rotate {
@@ -99,6 +103,7 @@ h4 {
     font-size: 3em !important;
     display: block;
     color: #002e43;
+    float:none;
     text-align:center;
     padding: 60px 1px;
 
@@ -442,7 +447,7 @@ footer a {
 
 footer img{
 
-	width: 90px;
+	width: 70px;
   float: none;
   margin: 20px auto;
   display: block;
@@ -452,6 +457,10 @@ footer img{
 /*------------------------------------------------------
 AVISO LEGAL
 ------------------------------------------------------*/
+#avisolegal.padding-section {
+    padding: 100px;
+    
+}
 
 
 #avisolegal li{
