@@ -145,7 +145,7 @@ HERO
         top: 0px;
         right: 20px;
         font-size: 3em;
-        text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+  
       }
 
  nav{
@@ -190,7 +190,6 @@ nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration:none;
-    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
 }
 
 /*------------------------------------------------------
@@ -249,6 +248,7 @@ INICIO
 
   .breadcrumbs li a {
         color: #fff;
+        text-shadow: 0 0 10px #007db6, 0 0 10px #007db6, 0 0 10px #007db6;
   }
 /*------------------------------------------------------
 NOSOTROS
@@ -581,7 +581,7 @@ AVISO LEGAL
   }
 
   #contacto [class^="flaticon-"]::before {
-    font-size: 1.5em !important;
+    font-size: 1.8em !important;
     padding-left: 5px;
 
   }
