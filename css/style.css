@@ -37,14 +37,14 @@ h1 span {
 h2, h3{
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
-    font-weight: 300;
     letter-spacing:10px;
 }
 
 
 h2 {
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 4em;
 }
 
 h3 {
@@ -52,6 +52,7 @@ h3 {
     letter-spacing: 6px;
     text-align: center;
     line-height: 1.4em;
+    font-weight: 300;
 
 }
 
@@ -266,11 +267,18 @@ NOSOTROS
   display: inline-block;
   text-align: left;
   line-height: 50px;
-  color: #fff;
+  color: #eee;
   padding-bottom:50px;
+  
 
 }
 
+
+#nosotros li{
+
+  list-style: none;
+
+}
 
 .asimetrico {
   color: #fff;
@@ -338,26 +346,23 @@ TRATAMIENTOS
     color: #002e43; 
     text-align:center;
     margin-top: 10px;
-    overflow:hidden;
-    
+    overflow:hidden;   
+    border: 2px solid rgba(0,46,67,.1)
   }
     
+
+.boton.naranja {
+    background: orange;
+    color:#eee;
+}
 
   .boton:hover {
     
     background-color: rgba(59, 89, 152, 0.2);
-    
     padding: 50px auto;
+    border: 3px solid rgba(0,46,67,.5)
 
   }
-
-
-.boton.naranja {
-
-    color: #eee;
-    border: 2px solid rgba(0,46,67,.2);
-    background: orange;
-}
 
 #tratamientos .boton {
     opacity: 0;
@@ -372,6 +377,7 @@ TRATAMIENTOS
     
 }
 
+
 /*------------------------------------------------------
 ASEGURADORAS
 ------------------------------------------------------*/
@@ -380,7 +386,7 @@ ASEGURADORAS
 #aseguradoras{
 
   text-align: center;
-  background: url("../img/background/bg_silla3.jpg") no-repeat fixed center / cover;
+  background: url("../img/background/bg_silla.jpg") no-repeat fixed center / cover;
   position: relative;
   padding: 100px 0;
 
@@ -397,27 +403,42 @@ ASEGURADORAS
 
 }
 
+ #aseguradoras p, #aseguradoras h2 {
+  
+  text-shadow: 0 0 8px #eee, 0 0 8px #eee, 0 0 8px #eee;
+  }
+
  #aseguradoras p {
- font-size:1.1em;
- 
+  font-size:1.1em;
+  
   }
 
 /*------------------------------------------------------
 CONTACTO
 ------------------------------------------------------*/
+#contacto{
+background-color: #fff;
+
+
+}
+
+
+
+
+
 #contacto [class^="flaticon-"]::before {
     color: #002e43;
     font-size: 2em !important;
     display: block;
     float:left;
-    padding: 10px;
+    padding-top: 25px;
 
 }
 
 
 #contacto article .devider {
-    width: 60%;
-    margin: 20px 20%;
+    width: 70%;
+    margin: 35px 5%;
     border-bottom: 1px solid rgba(0,46,67,.2);
 }
 
@@ -434,13 +455,6 @@ CONTACTO
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
-footer .devider {
-  width: 100%;
-  margin: 20px;
-  border-bottom: 1px solid rgba(0,46,67,.2);  
-}
-
-
 footer a {
     color: #002e43;
 }
@@ -453,40 +467,37 @@ footer img{
   display: block;
 }
 
+footer small p{
+
+  line-height: .5em;
+}
+
+footer{
+    background: rgba(238,238,238,.4);
+}
 
 /*------------------------------------------------------
 AVISO LEGAL
 ------------------------------------------------------*/
 #avisolegal.padding-section {
-    padding: 100px;
-    
+    padding: 100px;  
 }
-
 
 #avisolegal li{
-
   padding:10px;
-  
 }
 
-
 #avisolegal h1, #avisolegal h2{
-
-  
   text-align: left;
   text-transform: none;
   margin-bottom: 10px;
-
 }
 
 #avisolegal h1{
-
   text-transform: uppercase;
   font-size: 1.5em;
   font-weight: 600;
-
 }
-
 
 #avisolegal h2{
 
@@ -592,7 +603,7 @@ AVISO LEGAL
 
   #contacto [class^="flaticon-"]::before {
     font-size: 1.8em !important;
-    padding-left: 5px;
+    padding:10px;
 
   }
 
