@@ -25,6 +25,13 @@ function inicializar(){
 	$('.overlay').fadeOut(1200);
 }
 
+
+
+function muestraMenu(){
+	$('nav').toggleClass('abierto');
+	}
+
+
 function navegar(){
 
 	let objetivo = $(this).data('seccion');
@@ -34,12 +41,11 @@ function navegar(){
 	$('html').animate({
 		scrollTop:profundidad
 	}, 1100);
+	$('nav').removeClass('abierto');
 
 }
 
-function muestraMenu(){
-	$('nav').toggleClass('abierto');
-	}
+
 
 function efectosScroll(){
 

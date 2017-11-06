@@ -151,8 +151,7 @@ HERO
         top: 0px;
         right: 20px;
         font-size: 3em;
-  
-      }
+  }
 
  nav{
   	width: 100%;
@@ -171,7 +170,6 @@ HERO
 	  height: 95px;
     margin-left: 15px;
     margin-top: 0px;
-
 
 }
 
@@ -221,7 +219,7 @@ INICIO
 #escrito {
     display: inline-block;
     color: #eee;
-    text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43;
+    text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43; 
 }
 
 
@@ -229,8 +227,6 @@ INICIO
     font-size: 1.5em;
     margin-left: 1px
 }
-
-
 
 .breadcrumbs {
   margin: 50px;
@@ -255,8 +251,9 @@ INICIO
   }
 
   .breadcrumbs li a {
-        color: #002e43;
-        text-shadow: 0 0 5px #eee, 0 0 5px #eee, 0 0 5px #eee;
+  color: #002e43;
+  text-shadow: 0 0 5px #eee, 0 0 5px #eee, 0 0 5px #eee;
+
   }
 /*------------------------------------------------------
 NOSOTROS
@@ -269,10 +266,8 @@ NOSOTROS
   line-height: 50px;
   color: #eee;
   padding-bottom:50px;
-  
 
 }
-
 
 #nosotros li{
 
@@ -298,26 +293,26 @@ NOSOTROS
 }
 
 .asimetrico:before, .asimetrico:after {
-    background: inherit;
-    content: '';
-    height: 50%;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden;
+  background: inherit;
+  content: '';
+  height: 50%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  visibility: hidden;
 }
 .asimetrico:before {
-    top: 0;
-    transform: skewY(-4deg);
-    transform-origin: 100% 0;
+  top: 0;
+  transform: skewY(-4deg);
+  transform-origin: 100% 0;
 }
  
 .asimetrico:after {
-    bottom: 0;
-    transform: skewY(-3deg);
-    transform-origin: 100%;
+  bottom: 0;
+  transform: skewY(-3deg);
+  transform-origin: 100%;
 }
 /*------------------------------------------------------
 TRATAMIENTOS
@@ -329,51 +324,49 @@ TRATAMIENTOS
 }
 
 #tratamientos [class^="flaticon-"]::before {
-     color: #007db6;
-    font-size: 3em !important;
-    text-align: center;
-    padding-bottom:15px;
-    display: block;
-    line-height: 1em;
+  color: #007db6;
+  font-size: 3em !important;
+  text-align: center;
+  padding-bottom:15px;
+  display: block;
+  line-height: 1em;
 
 }
 
 .boton {
     
-    display: inline-block;
-    padding: 10px;
-    transition: all 1s cubic-bezier(.33,.62,.38,.97);
-    color: #002e43; 
-    text-align:center;
-    margin-top: 10px;
-    overflow:hidden;   
-    border: 2px solid rgba(0,46,67,.1)
-  }
+  display: inline-block;
+  padding: 10px;
+  transition: all 1s cubic-bezier(.33,.62,.38,.97);
+  color: #002e43; 
+  text-align:center;
+  margin-top: 10px;
+  overflow:hidden;   
+  border: 2px solid rgba(0,46,67,.1)
+}
     
 
 .boton.naranja {
-    background: orange;
-    color:#eee;
+  background: orange;
+  color:#eee;
 }
 
-  .boton:hover {
-    
-    background-color: rgba(59, 89, 152, 0.2);
-    padding: 50px auto;
-    border: 3px solid rgba(0,46,67,.5)
-
-  }
+.boton:hover {
+  background-color: rgba(59, 89, 152, 0.2);
+  padding: 50px auto;
+  border: 3px solid rgba(0,46,67,.5)
+}
 
 #tratamientos .boton {
-    opacity: 0;
-    padding:  50px auto;
-    transition: all .7s;
-    min-height: 280px;
+  opacity: 0;
+  padding:  50px auto;
+  transition: all .7s;
+  min-height: 280px;
 }
 
 #tratamientos .boton.visible {
-    opacity: 1;
-    padding: 40px auto;
+  opacity: 1;
+  padding: 40px auto;
     
 }
 
@@ -417,29 +410,24 @@ ASEGURADORAS
 CONTACTO
 ------------------------------------------------------*/
 #contacto{
-background-color: #fff;
-
+  background-color: #fff;
 
 }
 
-
-
-
-
 #contacto [class^="flaticon-"]::before {
-    color: #002e43;
-    font-size: 2em !important;
-    display: block;
-    float:left;
-    padding-top: 25px;
+  color: #002e43;
+  font-size: 2em !important;
+  display: block;
+  float:left;
+  padding-top: 25px;
 
 }
 
 
 #contacto article .devider {
-    width: 70%;
-    margin: 35px 5%;
-    border-bottom: 1px solid rgba(0,46,67,.2);
+  width: 70%;
+  margin: 35px 5%;
+  border-bottom: 1px solid rgba(0,46,67,.2);
 }
 
 
@@ -450,13 +438,11 @@ background-color: #fff;
 }
 
 
-
-
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
 footer a {
-    color: #002e43;
+  color: #002e43;
 }
 
 footer img{
@@ -473,14 +459,14 @@ footer small p{
 }
 
 footer{
-    background: rgba(238,238,238,.4);
+  background: rgba(238,238,238,.4);
 }
 
 /*------------------------------------------------------
 AVISO LEGAL
 ------------------------------------------------------*/
 #avisolegal.padding-section {
-    padding: 100px;  
+  padding: 100px;  
 }
 
 #avisolegal li{
@@ -517,18 +503,22 @@ AVISO LEGAL
     z-index: 3;
   }
 
+  .typed-cursor {
+    display:none;
+}
+
   nav {
-    width: 300px;
+    width: 190px;
     height: 100vh;
     border-right: 1px solid #999;
     transition: all .5s;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     background:#eee;
 
   }
 
   nav.abierto {
-    transform: translateX(0);
+    transform: translateY(0);
     z-index:2;
     
   }
@@ -543,12 +533,12 @@ AVISO LEGAL
     display: block;
     list-style: none;
     text-align: center;
-    width: 300px;
+    width: 200px;
   }
 
   nav img{
 
-    margin-left: 110px;
+    margin: 60px;
 
   }
 
@@ -560,7 +550,6 @@ AVISO LEGAL
     text-align: center;
     width: 100%;
     
-
   }
     
 
@@ -582,6 +571,16 @@ AVISO LEGAL
 
   }
 
+  #inicio .paddingExtra{
+
+  padding-top: 20px;
+}
+
+  #inicio .oculto{
+
+  display: block;
+}
+
 
   .breadcrumbs {
 
@@ -594,7 +593,6 @@ AVISO LEGAL
     font-size: 1em;
 
     }
-
 
   h2 {
     font-size: 1.4em;
@@ -616,20 +614,17 @@ AVISO LEGAL
 
 
 
+    /*COLORES*/
 
-
-    /*colores---------*/
-
-    /*#92c9fe azul muy claro
+    /*#92c9fe azul muy claro*/ 
 
     /*#007db6 azul claro*/ 
 
-    /*#002e43 azul oscuro*/ 
+    /*#002e43 azul logo*/ 
 
     /*#4f6466 gris letras*/ 
 
-
-    /*: color: #3bbeb3;*/
+    /*#3bbeb3 azul tratamientos*/ 
 
 
 
