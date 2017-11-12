@@ -555,7 +555,7 @@ nav a{
 
 nav img{
     display: block;
-    margin: 80px auto 0;
+    margin: 10px auto 0;
 }
 
 nav li:last-of-type a{
@@ -581,9 +581,23 @@ nav li:last-of-type a{
     width: 190px;
   }
 
-#escrito {
-    display: none; 
+
+  #inicio span{
+    font-size: 1.5em;
 }
+
+  #inicio .padding-section{
+  padding: 30px auto 0;
+}
+
+
+  #inicio .paddingExtra{
+  padding-top: 0px;
+}
+
+  #escrito {
+    display: none; 
+  }
 
 
   iframe{
@@ -623,6 +637,11 @@ nav li:last-of-type a{
   }
 
 
+.flaticon-arrows::before {
+  display:none;
+
+}
+
   #avisolegal.padding-section {
     padding: 20px;  
   }
@@ -630,6 +649,12 @@ nav li:last-of-type a{
   #avisolegal h1 {
     font-size: 20px;  
   }
+
+
+  #contacto [class^="flaticon-"]::before {
+  display: none;
+
+}
 
 }
 
