@@ -160,7 +160,7 @@ HERO
     left:0;
     transition: all .5s;
     position: fixed;
-    z-index:2;
+    z-index:400;
 
   }
 
@@ -188,7 +188,7 @@ HERO
 nav li a {
 	  color:#002e43;
     line-height: 60px;
-    padding: 17px 10px;
+    padding: 10px 10px;
     display: block;
     font-size: .8em;
     text-transform: uppercase;
@@ -196,9 +196,7 @@ nav li a {
     text-decoration:none;
 }
 
-span .oculto{
-  display: none;
-}
+
 /*------------------------------------------------------
 INICIO
 ------------------------------------------------------*/
@@ -213,15 +211,20 @@ INICIO
 
 }
 
+#inicio ul{
+
+  list-style: none;
+}
+
 .paddingExtra{
 
   padding-top: 180px;
 }
 
 #escrito {
-    display: inline;
-    color: #eee;
-    text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43; 
+  display: inline;
+  color: #eee;
+  text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43; 
 }
 
 
@@ -428,13 +431,22 @@ CONTACTO
 
 #contacto [class^="flaticon-"]::before {
   color: #002e43;
-  font-size: 1.8em !important;
+  font-size: 2em !important;
   display: block;
   float:left;
-  padding:20px 10px 10px 5px;
+  margin:25px 5px;
 
 }
 
+
+iframe{
+
+  float: left;
+  margin: 25px auto 15px auto;
+  display: block;
+  width: 100%;
+    
+  }
 
 #contacto article .devider {
   width: 85%;
@@ -523,31 +535,43 @@ AVISO LEGAL
     height: 100vh;
     border-right: 1px solid #999;
     transition: all .5s;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     background:#eee;
 
   }
+
+nav a{
+    color: #002e43;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+    border-bottom: 1px dashed rgba(0,0,0,.05);
+}
+
+
+nav img{
+    display: block;
+    margin: 100px auto 0;
+}
 
 nav li:last-of-type a{
     border:none;
 }
 
-nav img{
-    display: block;
-    margin: 60px auto 0;
-}
-
-
   nav.abierto {
-    transform: translateY(0);
-    z-index:2;
+    transform: translateX(0);
+    z-index:400;
     
   }
 
   nav ul {
     float: none;
     margin: 0;
-    padding: 0
+    padding: 0;
   }
 
   nav li {
@@ -557,14 +581,15 @@ nav img{
     width: 190px;
   }
 
+#escrito {
+    display: none; 
+}
 
 
   iframe{
 
     float: none;
     margin: 15px auto 15px auto;
-    display: block;
-    width: 100%;
     
   }
     
@@ -574,30 +599,26 @@ nav img{
   }
 
 
-  .flaticon-arrows::before {
-    font-size: 2.5em !important;
-    
-  }
 
-  #inicio span{
-
-    font-size: 1.3em;
-  }
 
   #inicio .paddingExtra{
 
-    padding-top: 20px;
+    padding-top: 50px;
   }
 
-  #inicio .oculto{
 
-    display: block;
+.breadcrumbs {
+  margin: 20px;
+  font-size: .8em;
+
   }
 
-  .breadcrumbs {
 
-    display:none;
-  }
+.breadcrumbs li::after {
+  content: " / ";
+  margin: 0 1px;
+  opacity: .4;
+ }
 
   #aseguradoras p {
 
@@ -609,11 +630,6 @@ nav img{
     line-height: 1.6em;
   }
 
-
-  #contacto [class^="flaticon-"]::before {
-  display:none;
-
-}
 
   #avisolegal.padding-section {
     padding: 20px;  
