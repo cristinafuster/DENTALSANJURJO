@@ -11,7 +11,7 @@ body {
     font-weight: 400;
     line-height: 23px;
     color: #002e43;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 aside{
@@ -63,7 +63,6 @@ h4 {
 }
 
 
-
 .padding-section {
     padding: 60px;
     
@@ -81,13 +80,12 @@ h4 {
 }
 
 .spinner {
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
     position: absolute;
     height: 120px;
     width: 120px;
     animation: rotate 2s infinite linear;
-    
     border-right-color: transparent;
     border-radius: 100%;
     background: url("../img/logo/logo_spinner.png") no-repeat center / cover;
@@ -170,6 +168,7 @@ HERO
 	  height: 95px;
     margin-left: 15px;
     margin-top: 0px;
+    opacity: .8;
 
 }
 
@@ -197,6 +196,9 @@ nav li a {
     text-decoration:none;
 }
 
+span .oculto{
+  display: none;
+}
 /*------------------------------------------------------
 INICIO
 ------------------------------------------------------*/
@@ -217,7 +219,7 @@ INICIO
 }
 
 #escrito {
-    display: inline-block;
+    display: inline;
     color: #eee;
     text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43; 
 }
@@ -272,7 +274,7 @@ NOSOTROS
 #nosotros li{
 
   list-style: none;
-
+  font-size: 17px;
 }
 
 .asimetrico {
@@ -348,15 +350,25 @@ TRATAMIENTOS
 
 .boton.naranja {
   background: orange;
-  color:#eee;
+  color:#007db6;
+  border: 3px solid rgba(0,46,67,0.5);
 }
 
 .boton:hover {
   background-color: rgba(59, 89, 152, 0.2);
   padding: 50px auto;
-  border: 3px solid rgba(0,46,67,.5)
+  border: 3px solid rgba(0,46,67,.5);
 }
 
+.boton.naranja:hover { 
+  background: #eee;
+  color:#007db6;
+  padding: 30px 50px 30px 40px;
+  text-decoration: none;
+  border: 3px solid rgba(0,46,67,1);
+}
+
+/*para hacerlo visible:*/
 #tratamientos .boton {
   opacity: 0;
   padding:  50px auto;
@@ -416,16 +428,16 @@ CONTACTO
 
 #contacto [class^="flaticon-"]::before {
   color: #002e43;
-  font-size: 2em !important;
+  font-size: 1.8em !important;
   display: block;
   float:left;
-  padding-top: 25px;
+  padding:20px 10px 10px 5px;
 
 }
 
 
 #contacto article .devider {
-  width: 70%;
+  width: 85%;
   margin: 35px 5%;
   border-bottom: 1px solid rgba(0,46,67,.2);
 }
@@ -487,9 +499,8 @@ AVISO LEGAL
 
 #avisolegal h2{
 
-  line-height: 7px;
   font-size: 1.2em;
-  letter-spacing: .6px;
+  letter-spacing: .3em;
   font-weight: 600;
 
 }
@@ -505,10 +516,10 @@ AVISO LEGAL
 
   .typed-cursor {
     display:none;
-}
+  }
 
   nav {
-    width: 190px;
+    width: 200px;
     height: 100vh;
     border-right: 1px solid #999;
     transition: all .5s;
@@ -516,6 +527,16 @@ AVISO LEGAL
     background:#eee;
 
   }
+
+nav li:last-of-type a{
+    border:none;
+}
+
+nav img{
+    display: block;
+    margin: 60px auto 0;
+}
+
 
   nav.abierto {
     transform: translateY(0);
@@ -533,21 +554,16 @@ AVISO LEGAL
     display: block;
     list-style: none;
     text-align: center;
-    width: 200px;
+    width: 190px;
   }
 
-  nav img{
 
-    margin: 60px;
-
-  }
 
   iframe{
 
     float: none;
-    margin: 0;
+    margin: 15px auto 15px auto;
     display: block;
-    text-align: center;
     width: 100%;
     
   }
@@ -559,58 +575,58 @@ AVISO LEGAL
 
 
   .flaticon-arrows::before {
-    font-size: 2em !important;
-    padding-top: 100px;
-
+    font-size: 2.5em !important;
+    
   }
 
   #inicio span{
 
     font-size: 1.3em;
-    text-align:justify;
-
   }
 
   #inicio .paddingExtra{
 
-  padding-top: 20px;
-}
+    padding-top: 20px;
+  }
 
   #inicio .oculto{
 
-  display: block;
-}
-
+    display: block;
+  }
 
   .breadcrumbs {
 
     display:none;
-
   }
 
-#aseguradoras p {
+  #aseguradoras p {
 
     font-size: 1em;
-
-    }
+  }
 
   h2 {
-    font-size: 1.4em;
-
+    font-size: 1.3em;
+    line-height: 1.6em;
   }
+
 
   #contacto [class^="flaticon-"]::before {
-    font-size: 1.8em !important;
-    padding:10px;
-
-  }
-
-  #contacto article .devider {
-    display: none;
-  }
-
+  display:none;
 
 }
+
+  #avisolegal.padding-section {
+    padding: 20px;  
+  }
+
+  #avisolegal h1 {
+    font-size: 20px;  
+  }
+
+}
+
+
+
 
 
 
