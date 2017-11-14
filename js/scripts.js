@@ -1,30 +1,13 @@
-$(window).on('load', inicializar);
+
 $(window).on('scroll', efectosScroll);
 
 
 $(document).ready(function(){
 
-	$('.desplazar').on('click', navegar);
 	$('.barras').on('click', muestraMenu);
 
 
-
-		/* PLUGIN TYPED.JS */
-	var typed = new Typed('#escrito', {
-	  strings: ["Su clínica dental en Ribeira", "Más de 20 años cuidando su boca"],
-	  typeSpeed: 60,
-	  loop: true,
-	  smartBackspace: true
-	});
-
 });
-
-
-function inicializar(){
-
-	$('.overlay').fadeOut(1200);
-}
-
 
 
 function muestraMenu(){
@@ -32,18 +15,6 @@ function muestraMenu(){
 	}
 
 
-function navegar(){
-
-	let objetivo = $(this).data('seccion');
-
-	let profundidad = $(objetivo).offset().top;
-
-	$('html').animate({
-		scrollTop:profundidad
-	}, 1100);
-	$('nav').removeClass('abierto');
-
-}
 
 
 
