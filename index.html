@@ -50,6 +50,17 @@
 	<!-- Iconos  -->
     <link rel="stylesheet" type="text/css" href="css/font/flaticon.css"> 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113391056-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-113391056-1');
+	</script>
+
+
   </head>
 
 	<body>
@@ -59,13 +70,13 @@
 
 	<div class="barras"> &equiv;</div>
 	
-		<nav>
+		<nav class="menu">
 
 			<ul>
-				<li><a href="#nosotros">Nosotros</a></li>
-				<li><a href="#tratamientos">Tratamientos</a></li>
-				<li><a href="#aseguradoras">Aseguradoras</a></li>
-				<li><a href="#contacto">Contacto</a></li>
+				<li><a href="#" class="desplazar" data-seccion="#nosotros">Nosotros</a></li>
+				<li><a href="#" class="desplazar" data-seccion="#tratamientos">Tratamientos</a></li>
+				<li><a href="#" class="desplazar" data-seccion="#aseguradoras">Aseguradoras</a></li>
+				<li><a href="#" class="desplazar" data-seccion="#contacto">Contacto</a></li>
 			</ul>
 
 			<h1>
