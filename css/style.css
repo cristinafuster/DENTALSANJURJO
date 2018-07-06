@@ -113,8 +113,8 @@ HERO
 
  nav{
   	width: 100%;
-  	height: 100px;
-    background: rgba(238,238,238,.4);	
+  	height: 110px;
+    background: rgba(238,238,238,.96);	
     letter-spacing: 2px;
     top: 0;
     left:0;
@@ -147,13 +147,14 @@ HERO
 
 nav a {
 	  color:#002e43;
-    line-height: 60px;
+    line-height: 85px;
     padding: 10px 10px;
     display: block;
-    font-size: .8em;
+    font-size: .9em;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration:none;
+    
 }
 
 
@@ -161,21 +162,28 @@ nav a {
 INICIO
 ------------------------------------------------------*/
 
-#inicio span{
-    font-family: "Dosis", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 1.7em;
-    font-weight:700;
-    color: #eee;
-    text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43;
+#inicio span, p{
+
+font-family: "Dosis", sans-serif;
+font-weight:700;
+
 }
 
+#inicio span{
+    font-size: 2.6em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    color: #eee;
+    text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43;
 
-#inicio ul{
+}
 
-  list-style: none;
+#inicio p{
+
+    font-size: 1.8em;
+    letter-spacing: 4px;
+
 }
 
 .paddingExtra{
@@ -183,34 +191,25 @@ INICIO
   padding-top: 180px;
 }
 
+ #inicio .typewriter {
+  overflow: hidden; 
+  border-right: transparent; 
+  white-space: nowrap;
+  margin: 0 auto; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
 
-.breadcrumbs {
-  margin: 50px;
-  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
 
-.breadcrumbs li {
-  display: inline-block;
-  list-style: none;
-  text-align: center;
-  text-transform: uppercase;
-  }
+.oculto{
 
-.breadcrumbs li::after {
-  content: " / ";
-  margin: 0 10px;
-  opacity: .4;
- }
-
- .breadcrumbs li:last-of-type::after {
-  content: "";   
-  }
-
-  .breadcrumbs li a {
-  color: #002e43;
-  text-shadow: 0 0 5px #eee, 0 0 5px #eee, 0 0 5px #eee;
-
-  }
+  display: none;
+}
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
@@ -231,6 +230,32 @@ NOSOTROS
   font-size: 17px;
 }
 
+
+.asimetrico:before, .asimetrico:after {
+  background: inherit;
+  content: '';
+  height: 70%;
+  /*width: 100%;*/
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  /*visibility: hidden;*/
+}
+.asimetrico:before {
+  top: 0;
+  transform: skewY(-4deg);
+  transform-origin: 100% 0;
+
+}
+ 
+.asimetrico:after {
+  bottom: 0;
+  transform: skewY(-3deg);
+  transform-origin: 100%;
+
+}
+
 .asimetrico {
   color: #fff;
   padding: 60px 0;
@@ -241,28 +266,6 @@ NOSOTROS
 
 }
 
-.asimetrico:before, .asimetrico:after {
-  background: inherit;
-  content: '';
-  height: 50%;
-  width: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  visibility: hidden;
-}
-.asimetrico:before {
-  top: 0;
-  transform: skewY(-4deg);
-  transform-origin: 100% 0;
-}
- 
-.asimetrico:after {
-  bottom: 0;
-  transform: skewY(-3deg);
-  transform-origin: 100%;
-}
 /*------------------------------------------------------
 TRATAMIENTOS
 ------------------------------------------------------*/
@@ -361,7 +364,8 @@ ASEGURADORAS
   }
 
  #aseguradoras p {
-  font-size:1.1em;
+  font-size:1.2em;
+  font-weight:600;
   
   }
 
@@ -523,7 +527,30 @@ nav li:last-of-type a{
 
 
   #inicio span{
+    font-size: 2em;
+}
+
+
+#inicio p{
     font-size: 1.5em;
+}
+
+
+
+.typewriter{
+
+  display: none;
+
+  
+}
+
+.oculto{
+
+  padding-top: 3em;
+  display: block;
+  letter-spacing: 2px;
+
+
 }
 
   #inicio .padding-section{
@@ -549,19 +576,6 @@ nav li:last-of-type a{
     padding:40px;
   }
 
-
-.breadcrumbs {
-  margin: 20px;
-  font-size: .8em;
-
-  }
-
-
-.breadcrumbs li::after {
-  content: " / ";
-  margin: 0 1px;
-  opacity: .4;
- }
 
   #aseguradoras p {
 
