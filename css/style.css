@@ -63,13 +63,13 @@ h4 {
 
 
 .padding-section {
-    padding: 60px;
+    padding: 80px;
     
 }
 
 
 .flaticon-arrows::before {
-    font-size: 3em !important;
+    font-size: 4em !important;
     display: block;
     color: #002e43;
     float:none;
@@ -85,7 +85,7 @@ HERO
 .hero{
 
   background: url("../img/bg_toothpaste.jpg") no-repeat fixed center top / cover;
-  height: 100vh;
+  height: 120vh;
   position: relative;
 
 }   
@@ -97,7 +97,7 @@ HERO
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(238,238,238,.4);
+  background-color: rgba(238,238,238,.2);
 
 }
 
@@ -105,15 +105,15 @@ HERO
         display: none;
         cursor: pointer;
         position: fixed;
-        top: 0px;
-        right: 20px;
-        font-size: 3em;
+        top: 15px;
+        right: 15px;
+        font-size: 3.5em;
         text-shadow: 0 0 7px #eee, 0 0 7px #eee, 0 0 7px #eee;
 }
 
  nav{
   	width: 100%;
-  	height: 110px;
+  	height: 105px;
     background: rgba(238,238,238,.96);	
     letter-spacing: 2px;
     top: 0;
@@ -125,10 +125,9 @@ HERO
 }
 
  nav img {
-	  height: 95px;
+	  height: 85px;
     margin-left: 15px;
     margin-top: 0px;
-    opacity: .8;
 
 }
 
@@ -148,7 +147,7 @@ HERO
 nav a {
 	  color:#002e43;
     line-height: 85px;
-    padding: 10px 10px;
+    padding: 8px 8px;
     display: block;
     font-size: .9em;
     text-transform: uppercase;
@@ -162,28 +161,28 @@ nav a {
 INICIO
 ------------------------------------------------------*/
 
-#inicio span, p{
+#inicio h1, #inicio span{
 
 font-family: "Dosis", sans-serif;
 font-weight:700;
+line-height: 1.7em;
+letter-spacing: 5px;
+}
+
+#inicio h1{
+    font-size: 2.6em;
+    
+    color: #eee;
+    text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43;
+    text-transform: uppercase;
 
 }
 
 #inicio span{
-    font-size: 2.6em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 1.5em;
-    color: #eee;
-    text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43;
 
-}
-
-#inicio p{
-
-    font-size: 1.8em;
-    letter-spacing: 4px;
-
+    font-size: 1.4em;
+    text-shadow: 0 0 3px #eee, 0 0 3px #eee, 0 0 3px #eee;
+  
 }
 
 .paddingExtra{
@@ -191,25 +190,6 @@ font-weight:700;
   padding-top: 180px;
 }
 
- #inicio .typewriter {
-  overflow: hidden; 
-  border-right: transparent; 
-  white-space: nowrap;
-  margin: 0 auto; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-.oculto{
-
-  display: none;
-}
 /*------------------------------------------------------
 NOSOTROS
 ------------------------------------------------------*/
@@ -218,7 +198,6 @@ NOSOTROS
 
   display: inline-block;
   text-align: left;
-  line-height: 50px;
   color: #eee;
   padding-bottom:50px;
 
@@ -228,6 +207,10 @@ NOSOTROS
 
   list-style: none;
   font-size: 17px;
+  line-height: 2em;
+  text-align: center;
+  letter-spacing: 2.5px;
+  
 }
 
 
@@ -235,17 +218,17 @@ NOSOTROS
   background: inherit;
   content: '';
   height: 70%;
-  /*width: 100%;*/
   left: 0;
   position: absolute;
   right: 0;
   z-index: -1;
-  /*visibility: hidden;*/
+  backface-visibility: hidden;
 }
 .asimetrico:before {
   top: 0;
-  transform: skewY(-4deg);
+  transform: skewY(3deg);
   transform-origin: 100% 0;
+
 
 }
  
@@ -258,7 +241,7 @@ NOSOTROS
 
 .asimetrico {
   color: #fff;
-  padding: 60px 0;
+  padding: 80px 0;
   text-align: center;
   background: #3b5998;
   position: relative;
@@ -431,14 +414,14 @@ footer small p{
 }
 
 footer{
-  background: rgba(238,238,238,.4);
+  background: rgba(238,238,238);
 }
 
 /*------------------------------------------------------
 AVISO LEGAL
 ------------------------------------------------------*/
 #avisolegal.padding-section {
-  padding: 100px;  
+  padding: 150px;  
 }
 
 #avisolegal li{
@@ -460,7 +443,7 @@ AVISO LEGAL
 #avisolegal h2{
 
   font-size: 1.2em;
-  letter-spacing: .3em;
+  letter-spacing: .1em;
   font-weight: 600;
 
 }
@@ -476,7 +459,7 @@ AVISO LEGAL
 
   nav {
     width: 200px;
-    height: 100vh;
+    height: auto;/*85vh*/
     border-right: 1px solid #999;
     transition: all .5s;
     transform: translateY(-100%);
@@ -526,32 +509,16 @@ nav li:last-of-type a{
   }
 
 
-  #inicio span{
-    font-size: 2em;
+#inicio h1{
+    font-size: 1.8em;
 }
 
+#inicio span{
 
-#inicio p{
-    font-size: 1.5em;
-}
-
-
-
-.typewriter{
-
-  display: none;
-
-  
-}
-
-.oculto{
-
-  padding-top: 3em;
-  display: block;
-  letter-spacing: 2px;
-
+    font-size: 1.2em;
 
 }
+
 
   #inicio .padding-section{
   padding: 30px auto 0;
@@ -573,7 +540,7 @@ nav li:last-of-type a{
     
 
   .padding-section{
-    padding:40px;
+    padding:30px;
   }
 
 
