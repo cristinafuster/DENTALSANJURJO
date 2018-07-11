@@ -209,7 +209,7 @@ NOSOTROS
   font-size: 17px;
   line-height: 2em;
   text-align: center;
-  letter-spacing: 2.5px;
+  letter-spacing: 2.2px;
   
 }
 
@@ -346,11 +346,30 @@ ASEGURADORAS
   text-shadow: 0 0 8px #eee, 0 0 8px #eee, 0 0 8px #eee;
   }
 
- #aseguradoras p {
+ #aseguradoras p, #consejos p {
   font-size:1.2em;
-  font-weight:600;
+
   
   }
+
+/*------------------------------------------------------
+CONSEJOS
+------------------------------------------------------*/
+ #consejos iframe{
+
+  display: block;
+  margin:10px auto;
+  width: 100%;
+  }
+
+  #consejos button{
+
+    padding: 15px 20px;
+    margin: 0 10px;
+
+  }
+
+    
 
 /*------------------------------------------------------
 CONTACTO
@@ -370,7 +389,7 @@ CONTACTO
 }
 
 
-iframe{
+#contacto iframe{
 
   float: left;
   margin: 25px auto 15px auto;
@@ -529,9 +548,13 @@ nav li:last-of-type a{
   padding-top: 0px;
 }
 
+  #consejos iframe{
 
+    margin: 15px auto 15px auto;
+    
+  }
 
-  iframe{
+  #contacto iframe{
 
     float: none;
     margin: 15px auto 15px auto;
@@ -544,9 +567,14 @@ nav li:last-of-type a{
   }
 
 
-  #aseguradoras p {
+  #aseguradoras p,#consejos p {
 
     font-size: 1em;
+  }
+
+  #consejos p{
+
+    text-align: center;
   }
 
   h2 {
