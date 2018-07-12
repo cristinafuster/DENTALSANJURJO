@@ -253,6 +253,7 @@ NOSOTROS
 
 }
 
+
 /*------------------------------------------------------
 TRATAMIENTOS
 ------------------------------------------------------*/
@@ -263,7 +264,7 @@ TRATAMIENTOS
 }
 
 #tratamientos [class^="flaticon-"]::before {
-  color: #007db6;
+  color: rgba(56,186,219);
   font-size: 3em !important;
   text-align: center;
   padding-bottom:15px;
@@ -372,8 +373,10 @@ CONSEJOS
 
 #consejos {
 
-  background-color: rgba(108, 193, 224, .2);
+  background-color: rgba(188,191,204);
 }
+
+
  
 
     
