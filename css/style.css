@@ -161,29 +161,34 @@ nav a {
 INICIO
 ------------------------------------------------------*/
 
-#inicio h1, #inicio span{
+#inicio h1, #inicio p{
 
 font-family: "Dosis", sans-serif;
 font-weight:700;
 line-height: 1.7em;
-letter-spacing: 5px;
+
 }
 
 #inicio h1{
+
     font-size: 2.6em;
-    
     color: #eee;
     text-shadow: 0 0 3px #002e43, 0 0 3px #002e43, 0 0 3px #002e43;
     text-transform: uppercase;
+    letter-spacing: 5px;
 
 }
 
-#inicio span{
 
-    font-size: 1.4em;
-    text-shadow: 0 0 3px #eee, 0 0 3px #eee, 0 0 3px #eee;
-  
+#inicio p{
+
+font-size: 1.8em;
+text-shadow: 0 0 3px #eee, 0 0 3px #eee, 0 0 3px #eee;
+letter-spacing: 4px;
+
 }
+
+
 
 .paddingExtra{
 
@@ -208,8 +213,7 @@ NOSOTROS
   list-style: none;
   font-size: 17px;
   line-height: 2em;
-  text-align: center;
-  letter-spacing: 2.2px;
+  text-align:center;
   
 }
 
@@ -289,8 +293,9 @@ TRATAMIENTOS
 
 .boton:hover {
   background-color: rgba(59, 89, 152, 0.2);
-  padding: 50px auto;
-  border: 3px solid rgba(0,46,67,.5);
+  padding: 80px auto;
+  border: 8px solid rgba(0,46,67,.5);
+  font-weight: 600;
 }
 
 .boton.naranja:hover { 
@@ -341,7 +346,7 @@ ASEGURADORAS
 
 }
 
- #aseguradoras p, #aseguradoras h2 {
+ #aseguradoras p, #aseguradoras h2, #consejos h2 {
   
   text-shadow: 0 0 8px #eee, 0 0 8px #eee, 0 0 8px #eee;
   }
@@ -360,14 +365,16 @@ CONSEJOS
   display: block;
   margin:10px auto;
   width: 100%;
-  }
+  background: url("../img/video.png")no-repeat center; 
 
-  #consejos button{
-
-    padding: 15px 20px;
-    margin: 0 10px;
 
   }
+
+#consejos {
+
+  background-color: rgba(108, 193, 224, .2);
+}
+ 
 
     
 
@@ -388,13 +395,13 @@ CONTACTO
 
 }
 
-
 #contacto iframe{
 
   float: left;
   margin: 25px auto 15px auto;
   display: block;
   width: 100%;
+
     
   }
 
@@ -471,6 +478,11 @@ AVISO LEGAL
 
 @media screen and (max-width: 800px) {
 
+  h2 {
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
+
   .barras {
     display: block;
     z-index: 3;
@@ -486,7 +498,7 @@ AVISO LEGAL
 
   }
 
-nav a{
+  nav a{
     
     padding: 10px 0;
     text-transform: uppercase;
@@ -496,17 +508,17 @@ nav a{
     display: block;
     text-align: center;
     border-bottom: 1px dashed rgba(0,0,0,.05);
-    line-height:20px;
-}
+    line-height:10px;
+  }
 
-nav img{
+  nav img{
     display: block;
     margin: 10px auto 0;
-}
+  }
 
-nav li:last-of-type a{
+  nav li:last-of-type a{
     border:none;
-}
+  }
 
   nav.abierto {
     transform: translateY(0);
@@ -527,45 +539,40 @@ nav li:last-of-type a{
     width: 190px;
   }
 
+  .hero{
 
-#inicio h1{
+    height: 100vh;
+    
+
+  }  
+
+  #inicio h1{
     font-size: 1.8em;
-}
+  }
 
-#inicio span{
-
-    font-size: 1.2em;
-
-}
-
+  #inicio p{
+    font-size: 1.5em;
+  }
 
   #inicio .padding-section{
-  padding: 30px auto 0;
-}
+  padding: 40px auto 0;
 
+  }
 
   #inicio .paddingExtra{
-  padding-top: 0px;
-}
-
-  #consejos iframe{
-
-    margin: 15px auto 15px auto;
-    
+  padding-top: 50px;
   }
 
-  #contacto iframe{
 
-    float: none;
-    margin: 15px auto 15px auto;
-    
+  #nosotros li{
+
+  text-align:left;
+  
   }
-    
 
   .padding-section{
     padding:30px;
   }
-
 
   #aseguradoras p,#consejos p {
 
@@ -577,11 +584,19 @@ nav li:last-of-type a{
     text-align: center;
   }
 
-  h2 {
-    font-size: 1.3em;
-    line-height: 1.6em;
+  #consejos iframe{
+
+  background: url("../img/video2.png")no-repeat center; 
+
+
   }
 
+  #contacto iframe{
+
+    float: none;
+    margin: 15px auto 15px auto;
+    
+  }
 
   #avisolegal.padding-section {
     padding: 20px;  
